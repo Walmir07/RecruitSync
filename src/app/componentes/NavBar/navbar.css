@@ -1,16 +1,18 @@
 .navbar{
+    display: flex;
     width: 100%;
     height: 70px;
     padding: 0 30px 2px 0;
     background-color: rgb(10, 11, 14);
-    display: flex;
     flex-direction: row;
     align-items: center;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid rgb(241, 224, 224);
   }
 
 .logo{
     margin: 0;
+    height: 70px;
+    width: 70px;
 }
 
 .links{
@@ -28,21 +30,4 @@ ul, li {
     list-style: none;
     display: flex;
     color: gray;
-}
-
-.login-regist{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    justify-content: end;
-    align-items: center;
-}
-
-.login, .signup{
-    height: 20px;
-    width: 30px;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid white;
-    border-radius: 10px;
 }

@@ -6,7 +6,8 @@
   min-height: 100vh;
 }
 
-.tittle{
+.titulo{
+  font-size: 60px;
   margin: 100px;
 }
 

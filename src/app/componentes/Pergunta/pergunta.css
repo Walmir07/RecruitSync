@@ -1,0 +1,13 @@
+.pergunta{
+    display: flex;
+    padding: 30px;
+    margin: 100px;
+}
+
+.perg{
+    font-size: 20px;
+}
+
+.resp{
+    font-size: 20px;
+}
