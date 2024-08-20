@@ -2,6 +2,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './page.module.css'
+import Google from '../../../../public/logo-google.png'
+import Apple from '../../../../public/logo-apple.png'
 
 export default function Cadastro(){
   return(
@@ -16,31 +18,46 @@ export default function Cadastro(){
         
           <form className={styles.form}>
 
-            <section>
+            <section className={styles.titulos}>
                 <h1 className={styles.title}>Create an account</h1>
-                <p className={styles.text1}>Already have an account ?</p> 
-                <p className={styles.text2}><Link href="Log in">Log in</Link></p>
+                <p className={styles.text1}>Already have an account? <Link className={styles.text3} href="Log in">Log in</Link></p> 
+            </section>
+
+         <section className={styles.inputs}>
+                <input type='text' className={styles.input} placeholder='First name'></input>
+                <input type='text' className={styles.input} placeholder='Last name'></input>
          </section>
 
-         <section>
-                <input type='text' className={styles.butao} placeholder='First name'></input>
-                <input type='text' className={styles.butao} placeholder='Last name'></input>
+         <section className={styles.inputs}>
+                <input type='email' className={styles.input2} placeholder='Email'></input>
          </section>
 
-         <section>
-                <input type='email' className={styles.butao1} placeholder='Email'></input>
+         <section className={styles.inputs}>
+                <input type='password' className={styles.input2} placeholder='Enter your passwrod'></input>
          </section>
 
-         <section>
-                <input type='password' className={styles.butao1} placeholder='Enter your passwrod'></input>
+         <section className={styles.sectioncheck}>
+              <input className={styles.checkbox} type='checkbox'></input>
+              <p className={styles.text2}>I agree to the <Link className={styles.text3} href="">Terms e Conditions</Link> </p>
          </section>
 
-         <section>
-                <p className={styles.texto2}>I agree to the</p>
-                <p className={styles.texto3}>Terms e Conditions</p>
-          </section>
+         <section className='inputs'>
+              <button className={styles.criar} type='submit'>Create account</button>
+         </section>
 
+         <section className={styles.rows}>
+              <hr className={styles.linha} /> <p>Or regist with</p> <hr className={styles.linha} />
+         </section>
 
+         <section className={styles.opcoes}>
+              <Link href="" type='text' className={styles.google}>
+                 <Image className={styles.logos} src={Google}></Image> <h6>Google</h6>
+              </Link>
+
+              <Link href="" type='text' className={styles.apple}>
+                 <Image className={styles.logos} src={Apple}></Image> <h6>Apple</h6>
+              </Link>
+         </section>
 
           </form>
       
