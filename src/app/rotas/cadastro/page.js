@@ -4,13 +4,14 @@ import Image from 'next/image';
 import styles from './page.module.css'
 import Google from '../../../../public/logo-google.png'
 import Apple from '../../../../public/logo-apple.png'
+import Imagem from '../../../../public/imagem-rs.png'
 
 export default function Cadastro(){
   return(
     <main className={styles.main}>
       <div className={styles.area1}>
 
-        
+        <Image className={styles.imagem} src={Imagem}></Image>
 
       </div>
 
@@ -46,16 +47,16 @@ export default function Cadastro(){
          </section>
 
          <section className={styles.rows}>
-              <hr className={styles.linha} /> <p>Or regist with</p> <hr className={styles.linha} />
+             <hr className={styles.linha} /> <p className={styles.owr}>Or regist with</p>  <hr className={styles.linha} />
          </section>
 
          <section className={styles.opcoes}>
               <Link href="" type='text' className={styles.google}>
-                 <Image className={styles.logos} src={Google}></Image> <h6>Google</h6>
+                 <Image className={styles.logos} src={Google}></Image> <h3>Google</h3>
               </Link>
 
               <Link href="" type='text' className={styles.apple}>
-                 <Image className={styles.logos} src={Apple}></Image> <h6>Apple</h6>
+                 <Image className={styles.logos} src={Apple}></Image> <h3>Apple</h3>
               </Link>
          </section>
 

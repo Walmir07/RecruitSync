@@ -14,7 +14,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #8f8f8f;
+    /*background-color: #8f8f8f;*/
     margin: 0;
     padding: 0;
   }
@@ -25,14 +25,19 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #0A5517;
+    /*background-color: #0A5517;*/
     margin: 0;
     padding: 0;
   }
 
+.imagem{
+  height: 750px;
+  width: 550px;
+}
+
 .form{
   display: flex;
-  background-color: gray;
+  /*background-color: gray;*/
   align-items: center;
   flex-direction: column;
   height: 80vh;
@@ -41,7 +46,8 @@
 
 .title{
   text-align: center;
-    font-size: 43px;
+  font-size: 43px;
+  margin: 0 0 20px 0;
 }
 
 .text1{
@@ -71,8 +77,9 @@
   border-radius: 10px;
   border: 2px solid white;
   padding: 0 0 0 25px;
-  font-size: 15px;
+  font-size: 17px;
   margin: 0 0 20px 0;
+  background-color: rgb(0, 0, 0);
 }
 
 .input2{
@@ -81,8 +88,9 @@
   border-radius: 10px;
   border: 2px solid white;
   padding: 0 0 0 25px;
-  font-size: 15px;
+  font-size: 17px;
   margin: 0 0 20px 0;
+  background-color: rgb(0, 0, 0);
 }
 
 .sectioncheck{
@@ -119,13 +127,23 @@
 
 .rows{
   display: flex;
+  flex-direction: row;
   margin: 35px 0 35px 0;
-  background-color: rgb(29, 38, 117);
-  width: 15vw;
+  /*background-color: rgb(29, 38, 117);*/
+  width: 20vw;
+  align-items: center;
   justify-content: center;
 }
 
 .linha{
+  /*background-color: blanchedalmond;*/
+  width: 7vw;
+  height: 0vh;
+}
+
+.owr{
+  margin: 0 5px 0 5px;
+  font-size: 15px;
 }
 
 .opcoes{
@@ -149,6 +167,14 @@
 .logos{
   height: 35px;
   width: 35px;
+  margin: 0 15px 0 0;
+}
+
+.google, .apple{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 
