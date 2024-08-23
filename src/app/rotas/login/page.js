@@ -1,23 +1,45 @@
-import Image from "next/image";
-//import styles from "./page.module.css";
-import Link from "next/link";
-import Imagem from "../../../../public/imagem-rs.png"
+import Link from 'next/link'
+import Image from 'next/image'
+import styles from './page.module.css'
+import Imagem from '../../../../public/imagem-rs.png'
 
 export default function Login(){
     return(
-        <main className="">
+        <main className={styles.main}>
+      <div className={styles.area1}>
 
-            <div className="div-img">
-                <Image src={Imagem}></Image>
-            </div>
+        <Image className={styles.imagem} src={Imagem}></Image>
 
-            <div className="div-form">
-                <section>
-                    <h1>Criar uma conta</h1>
-                    <p className="texto">Não possui uma conta? <Link href="#">Cadastrar</Link></p>
-                </section>
-            </div>
+      </div>
 
-        </main>
+      <div className={styles.area2}>
+        
+          <form className={styles.form}>
+
+            <section className={styles.titulos}>
+                <h1 className={styles.title}>Access your account</h1>
+            </section>
+
+         <section className={styles.inputs}>
+                <input type='email' className={styles.input2} placeholder='Email'></input>
+         </section>
+
+         <section className={styles.inputs}>
+                <input type='password' className={styles.input2} placeholder='Enter your passwrod'></input>
+         </section>
+
+         <section className={styles.sectioncheck}>
+              <input className={styles.checkbox} type='checkbox'></input>
+              <p className={styles.text2}>Save your password</p>
+         </section>
+
+         <section className='inputs'>
+              <Link  href='/rotas/home'><button className={styles.criar} type='submit'>Access Account</button></Link>
+         </section>
+
+          </form>
+      
+      </div>
+    </main>
     )
 }

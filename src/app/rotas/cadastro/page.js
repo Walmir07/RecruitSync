@@ -21,7 +21,7 @@ export default function Cadastro(){
 
             <section className={styles.titulos}>
                 <h1 className={styles.title}>Create an account</h1>
-                <p className={styles.text1}>Already have an account? <Link className={styles.text3} href="Log in">Log in</Link></p> 
+                <p className={styles.text1}>Already have an account? <Link className={styles.text3} href="/rotas/login">Log in</Link></p> 
             </section>
 
          <section className={styles.inputs}>
@@ -43,7 +43,7 @@ export default function Cadastro(){
          </section>
 
          <section className='inputs'>
-              <button className={styles.criar} type='submit'>Create account</button>
+              <Link href='/rotas/login'><button className={styles.criar} type='submit'>Create account</button></Link>
          </section>
 
          <section className={styles.rows}>
