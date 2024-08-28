@@ -1,0 +1,21 @@
+.icones{
+    height: 25px;
+    width: 25px;
+  }
+  
+.titulo{
+    font-size: 16px;
+    margin-left: 12px;
+  }
+  
+.link{
+   display: flex;
+   align-items: center;
+   margin: 0;
+   /*background-color: red;*/
+   cursor: pointer;
+   padding: 5px;
+   padding-left: 15px;
+   width: 100%;
+   border-radius: 10px;
+}

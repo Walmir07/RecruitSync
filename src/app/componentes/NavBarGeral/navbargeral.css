@@ -9,10 +9,11 @@
     border-bottom: 2px solid rgb(241, 224, 224);
   }
 
-.logo{
-    margin: 0;
-    height: 70px;
-    width: 70px;
+.bars{
+    height: 30px;
+    width: 30px;
+    margin: 0 10px 0 20px;
+    cursor: pointer;
 }
 
 .links{
