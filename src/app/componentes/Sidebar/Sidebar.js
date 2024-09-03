@@ -1,14 +1,13 @@
 import './sidebar.css'
 import Link from 'next/link'
-//import Close from '../../Imagens/close.svg'
-//import { Container, Conteudo } from './style.js'
-//import SidebarItem from '../SidebarItem/index'
-//import Perfil from '../Perfil/index'
-//import Pesquisa from '../Pesquisa/index'
-//import House from '../../Imagens/house.svg'
-//import User from '../../Imagens/user.svg'
-//import File from '../../Imagens/file.svg'
-//import Bell from '../../Imagens/bell.svg'
+import Pesquisa from '../Pesquisa/Pesquisa'
+import Close from '../../../../public/close.svg'
+import SidebarItem from '../SidebarItem/SidebarItem'
+import Perfil from '../Perfil/Perfil'
+import House from '../../../../public/house.svg'
+import User from '../../../../public/user.svg'
+import File from '../../../../public/file.svg'
+import Bell from '../../../../public/bell.svg'
 
 const Sidebar = ({active}) => {
 
@@ -17,20 +16,20 @@ const Sidebar = ({active}) => {
   }
   
   return(
-    <Container sidebar={active}>
+    <main className='container' sidebar={active}>
       <img src={Close} className='close' onClick={closeSidebar}></img>
 
-    <Conteudo>
+    <div className='conteudo'>
       
       <Perfil></Perfil>
       <Pesquisa></Pesquisa>
       
-        <SidebarItem Icone={House} Texto='Início' Caminho='/Tela-inicial'></SidebarItem>
-        <SidebarItem Icone={User} Texto='Perfil' Caminho='/Perfil'></SidebarItem>
-        <SidebarItem Icone={File} Texto='Projetos' Caminho='/Projetos'></SidebarItem>
-        <SidebarItem Icone={Bell} Texto='Notificações' Caminho='/Notificacoes'></SidebarItem>
-      </Conteudo>
-    </Container>
+        <SidebarItem Icone={House} Texto='Início' Caminho='/rotas/home'></SidebarItem>
+        <SidebarItem Icone={User} Texto='Perfil' Caminho='/rotas/perfil'></SidebarItem>
+        <SidebarItem Icone={File} Texto='Projetos' Caminho='/rotas/projetos'></SidebarItem>
+        <SidebarItem Icone={Bell} Texto='Notificações' Caminho='/rotas/notificacoes'></SidebarItem>
+      </div>
+    </main>
   )
 }
 

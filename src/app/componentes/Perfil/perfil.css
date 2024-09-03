@@ -1,0 +1,46 @@
+.perfil{
+    display: flex;
+    align-items: center;
+    /*background-color: lightgray;*/
+    height: 70px;
+    width: 100%;
+  }
+  
+  /*.avatar{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    /*background-color: gray;*/
+    /*background-image: url('../../Imagens/sem-foto.png');*/
+    /*margin: 0;
+    position: relative;
+    z-index: 1; 
+  }*/
+  
+  .retangulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 0 15px 15px 0;
+    background-color: #0a2042;
+    margin: 0;
+    left: -4px;
+    position: relative; 
+    z-index: 0;
+  }
+  
+  .imagem{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-right: 20px;
+    /*background-color: gray;*/
+    /*background-image: url('../../Imagens/sem-foto.png');*/
+    margin: 0;
+    position: relative;
+    z-index: 1; 
+  }

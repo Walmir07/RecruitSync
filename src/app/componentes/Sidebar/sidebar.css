@@ -1,3 +1,45 @@
+.container{
+  background-color: #0A5517;
+  padding-top: 20px;
+  padding-left: 20px;
+  position: fixed;
+  border-right: 1px solid black;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  border-radius: 15px;
+  animation: showSidebar .4s;
+  z-index: 1;
+  left: "${props => props.sidebar ? '0' : '-100%'}";
+    
+    > svg {
+      position: fixed;
+      color: white;
+      width: 30px;
+      height: 30px;
+      margin-top: 32px;
+      margin-left: 32px;
+      cursor: pointer;
+    }
+}
+
+.conteudo{
+  margin-top:20px;
+}
+
+@keyframes showSidebar{
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 300px;
+  }
+}
+
+
 .close{
     height: 32px;
     width: 32px;
