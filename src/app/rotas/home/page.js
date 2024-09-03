@@ -7,7 +7,7 @@ export default function Home(){
     return(
         <main className={styles.main}>
             <NavBarGeral></NavBarGeral>
-            <h1>Tela de home</h1>
+            <h1 className="titulo-home">Tela de home</h1>
         </main>
     )
 }

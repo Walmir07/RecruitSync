@@ -1,11 +1,12 @@
 import './sidebarItem.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const SidebarItem = ({ Icone, Texto, Caminho }) => {
   return(
-    <main className='container'>
+    <main className='containerIt'>
       <Link href={Caminho} className='link'>
-        <img src={Icone} className='icones'></img>
+        <Image src={Icone} className='icones' alt='Icone'></Image>
        <h1 className='titulo'>{Texto}</h1>
       </Link>
     </main>

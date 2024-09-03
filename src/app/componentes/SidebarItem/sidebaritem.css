@@ -1,8 +1,8 @@
-.container{
+.containerIt{
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #0A5517;
+  background-color: #e949db;
   font-size: 20px;
   color: white;
   padding: 0;
@@ -10,6 +10,7 @@
   border: 2px solid white;
   border-radius: 10px;
   margin: 0 15px 15px 0;
+  height: 100px;
 }
 
 .icones{
@@ -27,7 +28,7 @@
    display: flex;
    align-items: center;
    margin: 0;
-   /*background-color: red;*/
+   background-color: rgb(121, 115, 115);
    cursor: pointer;
    padding: 5px;
    padding-left: 15px;

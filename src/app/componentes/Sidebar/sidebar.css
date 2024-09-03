@@ -1,7 +1,10 @@
 .container{
-  background-color: #0A5517;
-  padding-top: 20px;
-  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #64b964;
+  /*opacity: 30%;*/
+  /*padding-top: 20px;*/
+  /*padding-left: 20px;*/
   position: fixed;
   border-right: 1px solid black;
   height: 100vh;
@@ -25,7 +28,10 @@
 }
 
 .conteudo{
-  margin-top:20px;
+  background-color: #899fff;
+  margin: 0;
+  height: 100%;
+  padding: 0 0 0 20px;
 }
 
 @keyframes showSidebar{
@@ -41,10 +47,9 @@
 
 
 .close{
-    height: 32px;
-    width: 32px;
-    margin-right: 10px;
-    color: black;
+    height: 37px;
+    width: 37px;
+    margin: 15px 10px 0 18px;
     cursor: pointer;
   }
   
