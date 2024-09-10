@@ -1,12 +1,12 @@
 .container{
   display: flex;
   flex-direction: column;
-  background-color: #64b964;
+  background-color: #030D31;
   /*opacity: 30%;*/
   /*padding-top: 20px;*/
   /*padding-left: 20px;*/
   position: fixed;
-  border-right: 1px solid black;
+  border-right: 1px solid rgb(255, 255, 255);
   height: 100vh;
   top: 0px;
   left: 0px;
@@ -28,7 +28,7 @@
 }
 
 .conteudo{
-  background-color: #899fff;
+  background-color: #030D31;
   margin: 0;
   height: 100%;
   padding: 0 0 0 20px;

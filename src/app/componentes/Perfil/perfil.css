@@ -4,7 +4,7 @@
     /*background-color: lightgray;*/
     height: 70px;
     width: 100%;
-    background-color: blueviolet;
+    background-color: #030D31;
   }
   
   /*.avatar{
@@ -27,7 +27,7 @@
     width: 200px;
     height: 40px;
     border-radius: 0 15px 15px 0;
-    background-color: #0a2042;
+    background-color: #30363D;
     margin: 0;
     left: -4px;
     position: relative; 
