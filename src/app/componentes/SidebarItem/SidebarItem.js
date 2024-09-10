@@ -1,4 +1,4 @@
-import './sidebarItem.css'
+import './sidebaritem.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
