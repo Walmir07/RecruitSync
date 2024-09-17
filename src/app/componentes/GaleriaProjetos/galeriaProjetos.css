@@ -1,0 +1,47 @@
+.contGaleria{
+    display: flex;
+    background-color: #30363D;
+    height: 300px;
+    width: 70%;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .titulos{
+    color: white;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+    /*background-color: lightcoral;*/
+  }
+
+  .linha{
+    width: 135px;
+  }
+
+  .projetos{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 20px 0 20px 0;
+    /*height: 100%;*/
+    /*background-color:lightblue;*/
+    column-gap: 1px;
+  }
+
+  .projetoTeste{
+    display: flex;
+    background-color: #D9D9D9;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 135px;
+    border-radius: 10px;
+    margin: 0 15px 0 0;
+  }

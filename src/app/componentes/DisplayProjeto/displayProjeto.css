@@ -1,0 +1,11 @@
+.displayProjeto{
+    display: flex;
+    background-color: #D9D9D9;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 135px;
+    border-radius: 10px;
+    margin: 0 10px 20px 0;
+    color: rgb(0, 0, 0);
+}

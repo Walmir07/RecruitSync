@@ -10,13 +10,13 @@ export default function InfoUsuarios(){
     //Dados para teste
 
     const dados = {
-      nome: "Walmir Lima da Silva",
-      email: "Walmir.lima@gmail.com",
-      contato: "(85) 99914-2549"
+      nome: "Walmir Lima",
+      email: "walmir.lima@gmail.com",
+      contato: "(85) 99914-2549" //Teste
     }
 
     return(
-        <div className="contUsuario">
+      <div className="contUsuario">
           <div className="divFoto">
           <h2 className="tituloFoto">Foto</h2>
           <Image src={ /*fotoPerfil ||*/ SemPerfil} className="foto"></Image>
