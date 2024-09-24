@@ -9,7 +9,6 @@ export default function Projetos() {
   return (
     <main className={styles.main}>
       <NavBarGeral></NavBarGeral>
-      <h1 className={styles.titulo}>Projetos</h1>
       <GerenciarProjeto></GerenciarProjeto>
     </main>
   );

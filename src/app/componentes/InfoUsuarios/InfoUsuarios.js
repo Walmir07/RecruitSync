@@ -7,11 +7,11 @@ import Sair from '../../../../public/close.svg'
 
 export default function InfoUsuarios(){
 
-    //Dados para teste
+    //Dados fictícios para teste
 
     const dados = {
       nome: "Walmir Lima",
-      email: "walmir.lima@gmail.com",
+      email: "walmir@gmail.com",
       contato: "(85) 99914-2549" //Teste
     }
 

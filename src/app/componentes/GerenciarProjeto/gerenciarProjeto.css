@@ -1,60 +1,44 @@
 .contGerenciar{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0 0 0;
-}
-
-.contsOpcoes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.titulos{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.imagens{
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    margin: 0 0 50px 0;
-    border: 3px solid #30363D;
-}
-
-.buttons{
-    height: 55px;
-    width: 250px;
-    font-size: 20px;
-    background-color: #000000;
-    opacity: 80%;
-    border-radius: 15px;
-    border: 2px solid rgb(255, 255, 255);
-}
-
-.criar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 440px;
-    width: 400px;
-    margin: 50px 0 0 0;
-    background-image: url('../../../../public/imagem-projeto1.jpg');
-    border: 2px solid white;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
 }
 
 .pesquisar{
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 440px;
-    width: 400px;
-    margin: 50px 0 0 0;
-    background-image: url('../../../../public/imagem-projeto2.jpeg');
-    border: 2px solid white;
+    height: 50px;
+    width: 100%;
 }
+
+.pesquisarProjeto{
+    background-color: #30363D;
+    height: 50px;
+    width: 100%;
+    margin: 0 15px 0 0;
+    margin-left: 0;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.criarNovo{
+    height: 50px;
+    width: 140px;
+    margin: 0 0 0 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(41, 159, 73);
+}
+
+.Lupa{
+    height: 25px;
+    width: 25px;
+    color: white;
+    position: absolute;
+    margin: 0 0 0 15px;
+  }
