@@ -1,0 +1,35 @@
+.contProjeto{
+    display: flex;
+    background-color: #4A5C6A;
+    height: 150px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.logo-do-projeto{
+    height: 120px;
+    width: 120px;
+}
+
+.sessao1{
+    background-color: rgb(127, 209, 168);
+}
+
+.sessao2{
+    background-color: rgb(145, 140, 221);
+}
+
+.sessao3{
+    background-color: rgb(230, 151, 133);
+}
+
+.sessao4{
+    background-color: rgb(213, 98, 184);
+}
+
+p{
+    font-size: 20px;
+}

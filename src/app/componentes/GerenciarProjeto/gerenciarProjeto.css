@@ -1,6 +1,6 @@
 .contGerenciar{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     padding: 30px;
@@ -42,3 +42,12 @@
     position: absolute;
     margin: 0 0 0 15px;
   }
+
+.projetos-criados{
+    display: flex;
+    margin: 50px 0 0 0 ;
+    justify-content: center;
+    background-color: #30363D;
+    height: 75vh;
+    padding: 40px 30px 20px 30px;
+}
