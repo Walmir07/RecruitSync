@@ -17,7 +17,9 @@ export default function GerenciarProjeto(){
                </div>
                
             <div className='projetos-criados'>
-              <Projeto logo={Google} nome='Google' coordenador='Walmir' instituicao='Google.com' descricao='Esse é um projeto do google'></Projeto>
+              <Projeto logo={Google} nome='Google' coordenador='Walmir' instituicao='Google.com' descricao='“Explore oportunidades educacionais e inscreva-se para se tornar um bolsista!
+Descubra oportunidades de desenvolvimento acadêmico e profissional sob medida
+para você. Seja parte da próxima geração de líderes. Inscreva-se agora!”' situacao='Em andamento'></Projeto>
             </div>
         </div>
     )

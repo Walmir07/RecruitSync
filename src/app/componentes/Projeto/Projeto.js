@@ -8,21 +8,21 @@ export default function Projeto({logo, nome, coordenador, instituicao, descricao
                 <Image className='logo-do-projeto' src={logo}></Image>
             </session>
             <session className="sessao2">
-                <p>Nome: </p> <p>{nome}</p>
+                <p><strong>Nome:</strong> {nome}</p> 
                 <hr></hr>
-                <p>Coordenador: </p> <p>{coordenador}</p>
+                <p><strong>Coordenador:</strong> {coordenador}</p>
                 <hr></hr>
-                <p>Instituição: </p> <p>{instituicao}</p>
+                <p><strong>Instituição:</strong> {instituicao}</p>
                 <hr></hr>
             </session>
             <session className="sessao3">
                 <div className='descricao'>
-                    <p>{descricao}</p>
+                    <p className='descricao-projeto'>{descricao}</p>
                 </div>
             </session>
             <session className="sessao4">
-                <button>{situacao}</button>
-                <button className=''>Acessar inscritos</button>
+                <div className='situacao'>{situacao}</div>
+                <button className='acessar-inscritos'>Acessar inscritos</button>
             </session>
         </div>
     )
