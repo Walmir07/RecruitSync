@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Lupa from '../../../../public/search.svg'
 import Projeto from '../Projeto/Projeto'
 import Google from '../../../../public/logo-google.png'
+import Link from 'next/link'
 
 
 
@@ -13,7 +14,7 @@ export default function GerenciarProjeto(){
                <div className='pesquisar'>
                    <Image src={Lupa} className='Lupa'></Image>
                    <input className='pesquisarProjeto' type='search' placeholder='Buscar projeto'></input>
-                   <button className='criarNovo'>Criar novo</button>
+                   <Link href="/rotas/criacao-de-projetos" className='criarNovo'>Criar novo</Link>
                </div>
                
             <div className='projetos-criados'>
