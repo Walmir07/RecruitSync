@@ -4,11 +4,16 @@ import Lupa from '../../../../public/search.svg'
 import Projeto from '../Projeto/Projeto'
 import Google from '../../../../public/logo-google.png'
 import Link from 'next/link'
+import db from '@/lib/db'
 
 
+export default async function GerenciarProjeto(){
+    
+    const projetos = await db.query("SELECT * FROM projeto")
 
-export default function GerenciarProjeto(){
+    
     return(
+
         <div className='contGerenciar'>
 
                <div className='pesquisar'>
@@ -19,7 +24,9 @@ export default function GerenciarProjeto(){
                
             <div className='projetos-criados'>
 
-              <Projeto logo={Google} nome='Google' coordenador='Walmir' instituicao='Google.com' descricao='“Explore oportunidades educacionais e inscreva-se para se tornar um bolsista!
+              {projetos.rows.map(p => (<Projeto /*logo={p.logo}*/ nome={(p.nome)} /*coordenador={p.coordenador}*/ /*instituicao={p.instituicao}*/ descricao={p.descricao}></Projeto>))}
+
+              {/*<Projeto logo={Google} nome='Google' coordenador='Walmir' instituicao='Google.com' descricao='“Explore oportunidades educacionais e inscreva-se para se tornar um bolsista!
 Descubra oportunidades de desenvolvimento acadêmico e profissional sob medida
 para você. Seja parte da próxima geração de líderes. Inscreva-se agora!”' situacao='Em andamento'></Projeto>
 
@@ -29,7 +36,7 @@ para você. Seja parte da próxima geração de líderes. Inscreva-se agora!”'
 
 <Projeto logo={Google} nome='Google' coordenador='Walmir' instituicao='Google.com' descricao='“Explore oportunidades educacionais e inscreva-se para se tornar um bolsista!
 Descubra oportunidades de desenvolvimento acadêmico e profissional sob medida
-para você. Seja parte da próxima geração de líderes. Inscreva-se agora!”' situacao='Em andamento'></Projeto>
+para você. Seja parte da próxima geração de líderes. Inscreva-se agora!”' situacao='Em andamento'></Projeto>*/}
 
             </div>
         </div>

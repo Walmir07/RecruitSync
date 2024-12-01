@@ -4,20 +4,21 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Config from '../../../../../public/gear.svg'
 import Sair from '../../../../../public/close.svg'
-import db from "@/lib/db";
+import db from '@/lib/db'
 
 export default async function InfoUsuarios({params}){
 
-    const gerente = await db.query("select * from gerente where id = $1", params.id)
+    //const gerente = await db.query("select * from gerente where id = $1", params.id)
 
     //Dados fictícios para teste
-    console.log(gerente)
-    const dados = gerente.rows[0];
-    /*const dados = {
+    //console.log(gerente)
+    //const dados = gerente.rows[0];
+
+    const dados = {
       nome: "Walmir Lima",
       email: "walmir@gmail.com",
       contato: "(85) 99914-2549" //Teste
-    }*/
+    }
 
     return(
       <div className="contUsuario">

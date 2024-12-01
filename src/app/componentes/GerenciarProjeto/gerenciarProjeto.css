@@ -47,7 +47,8 @@
   }
 
 .projetos-criados{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     flex-direction: column;
     margin: 50px 0 0 0 ;
     justify-content: center;
