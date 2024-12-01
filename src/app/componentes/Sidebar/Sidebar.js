@@ -9,6 +9,11 @@ import House from '../../../../public/house.svg'
 import User from '../../../../public/user.svg'
 import File from '../../../../public/file.svg'
 import Bell from '../../../../public/bell.svg'
+//import db from '../../../lib/db.js'
+
+//const gerente = await db.query("select * from gerente where id = $1", params.id)
+//console.log(gerente)
+//const dados = gerente.rows[0];
 
 const Sidebar = ({active}) => {
 
@@ -26,7 +31,7 @@ const Sidebar = ({active}) => {
       <Pesquisa></Pesquisa>
       
         <SidebarItem Icone={House} Texto='Início' Caminho='/rotas/home'></SidebarItem>
-        <SidebarItem Icone={User} Texto='Perfil' Caminho='/rotas/perfil'></SidebarItem>
+        <SidebarItem Icone={User} Texto='Perfil' Caminho="/rotas/perfil" /*{`/rotas/perfil/${dados.id}`}*/></SidebarItem>
         <SidebarItem Icone={File} Texto='Projetos' Caminho='/rotas/projetos'></SidebarItem>
       </div>
     </main>

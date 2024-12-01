@@ -4,7 +4,7 @@ import Image from 'next/image';
 import styles from './page.module.css'
 import Google from '../../../../public/logo-google.png'
 import Apple from '../../../../public/logo-apple.png'
-import Imagem from '../../../../public/imagem-rs.png'
+import Imagem from '../../../../public/logo-rs.png'
 
 export default function Cadastro(){
   return(

@@ -1,14 +1,14 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './page.module.css'
-import Imagem from '../../../../public/imagem-rs.png'
+import Imagem from '../../../../public/logo-rs.png'
 
 export default function Login(){
     return(
         <main className={styles.main}>
       <div className={styles.area1}>
 
-        <Image className={styles.imagem} src={Imagem}></Image>
+        <Image className={styles.imagem} src={Imagem} alt="Logo"></Image>
 
       </div>
 
