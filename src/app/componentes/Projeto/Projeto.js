@@ -1,7 +1,31 @@
 import './projeto.css'
 import Image from 'next/image'
+import db from '@/lib/db'
 
-export default function Projeto({logo, nome, coordenador, instituicao, descricao, situacao}){
+export default async function Projeto({logo, nome, coordenador, instituicao, descricao, situacao}){
+
+    /*const projetos = await db.query("SELECT * FROM projeto")
+
+    let situacaoP = projetos.situacao;
+    console.log(situacaoP)
+
+    function corSituacao({situacaoP}){
+
+        let cor;
+
+        if(situacaoP === "Concluído"){
+            cor = "#18902c"
+        }
+        else if(situacaoP === "Em andamento"){
+            cor = "#D5D519"
+        }
+        else{
+            cor = "#e50e0e;"
+        }
+        return cor
+    }*/
+
+
     return(
         <div className='contProjeto'>
             <section className="sessao1">
@@ -21,7 +45,7 @@ export default function Projeto({logo, nome, coordenador, instituicao, descricao
                 </div>
             </section>
             <section className="sessao4">
-                <div className='situacao'>{situacao}</div>
+                <div className='situacao' /*style={{backgroundColor: {cor}}}*/>{situacao}</div>
                 <button className='acessar-inscritos'>Acessar inscritos</button>
             </section>
         </div>

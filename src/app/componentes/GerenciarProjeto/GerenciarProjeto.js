@@ -11,7 +11,6 @@ export default async function GerenciarProjeto(){
     
     const projetos = await db.query("SELECT * FROM projeto")
 
-    
     return(
 
         <div className='contGerenciar'>
@@ -24,7 +23,7 @@ export default async function GerenciarProjeto(){
                
             <div className='projetos-criados'>
 
-              {projetos.rows.map(p => (<Projeto /*logo={p.logo}*/ nome={(p.nome)} /*coordenador={p.coordenador}*/ /*instituicao={p.instituicao}*/ descricao={p.descricao}></Projeto>))}
+              {projetos.rows.map(p => (<Projeto /*logo={p.logo}*/ nome={(p.nome)} /*coordenador={p.coordenador}*/ /*instituicao={p.instituicao}*/ descricao={p.descricao} situacao={p.situacao}></Projeto>))}
 
               {/*<Projeto logo={Google} nome='Google' coordenador='Walmir' instituicao='Google.com' descricao='“Explore oportunidades educacionais e inscreva-se para se tornar um bolsista!
 Descubra oportunidades de desenvolvimento acadêmico e profissional sob medida
