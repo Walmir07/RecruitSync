@@ -1,0 +1,11 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+.titulo{
+    margin: 20px;
+    font-size: 25px;
+}

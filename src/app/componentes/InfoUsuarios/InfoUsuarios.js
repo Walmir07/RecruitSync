@@ -1,30 +1,35 @@
 import './infoUsuarios.css'
-import SemPerfil from '../../../../../public/sem-foto.png'
+import SemPerfil from '../../../../public/sem-foto.png'
 import Link from 'next/link'
 import Image from 'next/image'
-import Config from '../../../../../public/gear.svg'
-import Sair from '../../../../../public/close.svg'
-import db from '@/lib/db'
+import Config from '../../../../public/gear.svg'
+import Sair from '../../../../public/close.svg'
+import db from '@/lib/db';
+import { getGerentesById } from '@/lib/gerente';
 
-export default async function InfoUsuarios({params}){
 
-    //const gerente = await db.query("select * from gerente where id = $1", params.id)
+export default async function InfoUsuarios({ id }){
+    const gerente = await getGerentesById(id);
+    // const gerente = await db.query("select * from gerente where id = $1", [params.id])
 
-    //Dados fictícios para teste
-    //console.log(gerente)
-    //const dados = gerente.rows[0];
+    
+    console.log(gerente)
+    const dados = gerente;
 
+    /*
+    Dados fictícios para teste
+    
     const dados = {
       nome: "Walmir Lima",
       email: "walmir@gmail.com",
       contato: "(85) 99914-2549" //Teste
-    }
+    }*/
 
     return(
       <div className="contUsuario">
           <div className="divFoto">
           <h2 className="tituloFoto">Foto</h2>
-          <Image src={ /*fotoPerfil ||*/ SemPerfil} className="foto"></Image>
+          <Image src={ /*fotoPerfil ||*/ SemPerfil} className="foto" alt='Foto de perfil'></Image>
       </div>
 
       <div className="divInfo">

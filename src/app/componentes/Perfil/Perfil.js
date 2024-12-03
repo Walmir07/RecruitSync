@@ -6,7 +6,7 @@ import Image from 'next/image'
 function Perfil({ fotoPerfil, nomeUsuario}){
   return(
     <div className='perfil'>
-      <Image src={fotoPerfil || SemPerfil} className='imagem'>
+      <Image src={fotoPerfil || SemPerfil} className='imagem' alt='Foto de perfil'>
       </Image>
       <div className='retangulo'>
         <h2>{nomeUsuario} Walmir Lima</h2>
