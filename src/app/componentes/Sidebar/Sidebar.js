@@ -15,21 +15,19 @@ import Bell from '../../../../public/bell.svg'
 //console.log(gerente)
 //const dados = gerente.rows[0];
 
-const Sidebar = ({active}) => {
-
-  const closeSidebar = () => {
-    active(false)
+function Sidebar({ active }) {
+  function closeSidebar() {
+    active(false);
   }
-  
-  return(
-    <main className='container' sidebar={active}>
-     <div><Image src={Close} className='close' onClick={closeSidebar} alt='Fechar'></Image></div>
 
-    <div className='conteudo'>
-      
-      <Perfil></Perfil>
-      <Pesquisa></Pesquisa>
-      
+  return (
+    <main className='container' sidebar={active}>
+      <div><Image src={Close} className='close' onClick={closeSidebar} alt='Fechar'></Image></div>
+
+      <div className='conteudo'>
+        <Perfil></Perfil>
+        <Pesquisa></Pesquisa>
+
         <SidebarItem Icone={House} Texto='Início' Caminho='/rotas/home'></SidebarItem>
         <SidebarItem Icone={User} Texto='Perfil' Caminho="/rotas/perfil" /*{`/rotas/perfil/${dados.id}`}*/></SidebarItem>
         <SidebarItem Icone={File} Texto='Projetos' Caminho='/rotas/projetos'></SidebarItem>
@@ -38,4 +36,4 @@ const Sidebar = ({active}) => {
   )
 }
 
-export default Sidebar
+export default Sidebar;

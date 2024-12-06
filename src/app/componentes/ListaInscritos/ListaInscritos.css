@@ -7,6 +7,7 @@
     background-color: #30363D;
     height: 75vh;
     padding: 20px 30px 20px 30px;
+    gap: 20px;
     overflow-y: scroll;
     scroll-behavior:auto;
     overflow: auto;

@@ -1,6 +1,7 @@
 import './projeto.css'
 import Image from 'next/image'
 import db from '@/lib/db'
+import Link from 'next/link'
 
 export default async function Projeto({logo, nome, coordenador, instituicao, descricao, situacao}){
 
@@ -46,7 +47,7 @@ export default async function Projeto({logo, nome, coordenador, instituicao, des
             </section>
             <section className="sessao4">
                 <div className='situacao' /*style={{backgroundColor: {cor}}}*/>{situacao}</div>
-                <button className='acessar-inscritos'>Acessar inscritos</button>
+                <Link href="/rotas/acessar-inscritos" className='lk-acessar-inscritos'>Acessar inscritos</Link>
             </section>
         </div>
     )

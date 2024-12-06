@@ -5,16 +5,16 @@ import Image from 'next/image'
 import Config from '../../../../public/gear.svg'
 import Sair from '../../../../public/close.svg'
 import db from '@/lib/db';
-import { getGerentesById } from '@/lib/gerente';
+import { getCoordenadoresById } from '@/lib/coordenador'
 
 
 export default async function InfoUsuarios({ id }){
-    const gerente = await getGerentesById(id);
+    const coordenador = await getCoordenadoresById(id);
     // const gerente = await db.query("select * from gerente where id = $1", [params.id])
 
     
-    console.log(gerente)
-    const dados = gerente;
+    console.log(coordenador)
+    const dados = coordenador;
 
     /*
     Dados fictícios para teste
