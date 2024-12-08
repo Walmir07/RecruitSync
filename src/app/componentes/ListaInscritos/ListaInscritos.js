@@ -1,20 +1,17 @@
 import './ListaInscritos.css'
 import DisplayCandidato from '../DisplayCandidato/DisplayCandidato'
+import db from '@/lib/db'
 
-export default function ListaInscritos(){
+export default async function ListaInscritos(){
+
+    const candidatos = await db.query("select * from candidato");
+    const quantCandidato = await db.query("select count(*) from candidato")
+
+
     return(
         <div className='lista-inscritos'>
-            <p>Quantidade de inscritos: {/*Quantidade do banco com count*/}</p>
-            <DisplayCandidato nomeCandidato="Ana Heloísa Oliveira"/>
-            <DisplayCandidato nomeCandidato="Itallo Nathan Andrade"/>
-            <DisplayCandidato nomeCandidato="Pedro Henrique"/>
-            <DisplayCandidato nomeCandidato="Ana Heloísa Oliveira"/>
-            <DisplayCandidato nomeCandidato="Itallo Nathan Andrade"/>
-            <DisplayCandidato nomeCandidato="Ana Heloísa Oliveira"/>
-            <DisplayCandidato nomeCandidato="Itallo Nathan Andrade"/>
-            <DisplayCandidato nomeCandidato="Pedro Henrique"/>
-            <DisplayCandidato nomeCandidato="Ana Heloísa Oliveira"/>
-            <DisplayCandidato nomeCandidato="Itallo Nathan Andrade"/>
+            <p>Quantidade de inscritos: {quantCandidato.rows[0].count}</p>
+            {candidatos.rows.map( c => (<DisplayCandidato nomeCandidato={c.nome}></DisplayCandidato>))}
         </div>
     )
 }
