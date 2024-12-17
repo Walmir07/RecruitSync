@@ -1,4 +1,4 @@
-import './displayCandidato.css'
+import './DisplayCandidato.css'
 import Image from 'next/image'
 import Google from '../../../../public/logo-google.png'
 import Link from 'next/link'
