@@ -1,28 +1,30 @@
 import './CriarProjeto.css'
+import testLogo from './../../../../public/logo-rs.png'
 
 export default function CriarProjeto(){
     return(
         <div className='container-criar'>
+
             <form className='formulario-criacao'>
-                <section className='section1'>
-                    <section className='subsection1'>
-                        <label for="logo-do-projeto"><h1>Logo</h1></label>
-                        <input type='file' className="logo-do-projeto" name="logo-do-projeto"></input>
+                <section className='informacoes'>
+                    <section className='sect-img'>
+                        <input type="file" className="imagem-projeto"></input>
                     </section>
-                    <section className='subsection2'>
-                        <input className='inputs' type='text' placeholder='Nome do projeto'></input>
-                        <input className='inputs' type='text' placeholder='Etapas'></input>
-                        <input className='inputs' type='text' placeholder='Instituição'></input>
-                        <input className='inputs' type='text' placeholder='Critérios'></input>
-                        <input className='inputs' type='text' placeholder='Vagas'></input>
+                    <section className='sect-inputs'>
+                        <input type='text' className='inputs' placeholder='Nome do projeto'></input>
+                        <input type='text' className='inputs' placeholder='Instituição'></input>
+                        <input type='text' className='inputs' placeholder='Critérios'></input>
+                        <input type='text' className='inputs' placeholder='Vagas'></input>
+                    </section>
+                    <section className='sect-desc'>
+                        <textarea className='textarea' placeholder='Descrição do projeto'></textarea>
                     </section>
                 </section>
-                <section className='section2'>
-                    <textarea placeholder='Descrição'></textarea>
-                    <hr></hr>
-                    <button className='botao-criar'>Criar Projeto</button>
+                <section className='etapas'>
+                    
                 </section>
             </form>
+
         </div>
     )
 }
