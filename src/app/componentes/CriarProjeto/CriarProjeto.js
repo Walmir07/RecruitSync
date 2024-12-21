@@ -1,5 +1,6 @@
 import './CriarProjeto.css'
 import testLogo from './../../../../public/logo-rs.png'
+import Link from 'next/link'
 
 export default function CriarProjeto(){
     return(
@@ -21,7 +22,31 @@ export default function CriarProjeto(){
                     </section>
                 </section>
                 <section className='etapas'>
-                    
+                    <section className='etapa1'>
+                        <h4 className='titulos-etapas'>Análise curricular</h4>
+                        <section className='opcoes-analise'>
+                             <div>
+                                 <input type="radio" id="op1" name="drone" value="huey"/>
+                                <label className='text-lab' for="op1">Atribuir análise</label>
+                             </div>
+                            
+                            <div>
+                                 <input type="radio" id="op2" name="drone" value="dewey" />
+                                 <label className='text-lab' for="op2">Não atribuir análise</label>
+                            </div>
+                        </section>
+                    </section>
+                    <section className='etapa2'>
+                        <h4 className='titulos-etapas'>Prova de seleção</h4>
+                        <input className='link-prova' type="text" placeholder="Link do formulário"></input>
+                    </section>
+                    <section className='etapa3'>
+                        <h4 className='titulos-etapas'>Entrevista de seleção</h4>
+                        <input className="entrevista" type="file" name="entrevista" accept="image/png, image/jpeg" />
+                    </section>
+                </section>
+                <section className='sect-botao'>
+                   <Link href='/rotas/home'><button className='criar-projeto'>Criar Projeto</button></Link>
                 </section>
             </form>
 
