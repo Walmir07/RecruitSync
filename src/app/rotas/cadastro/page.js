@@ -38,9 +38,8 @@ export default function Cadastro(){
                 <input type='password' className={styles.input2} placeholder='Enter your passwrod'></input>
          </section>
 
-         <section className={styles.sectioncheck}>
-              <input className={styles.checkbox} type='checkbox'></input>
-              <p className={styles.text2}>I agree to the <Link className={styles.text3} href="">Terms e Conditions</Link> </p>
+         <section className={styles.espaco}>
+              
          </section>
 
          <section className='inputs'>

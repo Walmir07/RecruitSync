@@ -46,7 +46,7 @@
 
 .title{
   text-align: center;
-  font-size: 43px;
+  font-size: 45px;
   margin: 0 0 20px 0;
 }
 
@@ -94,7 +94,7 @@
   background-color: rgb(0, 0, 0);
 }
 
-.sectioncheck{
+.espaco{
   display: flex;
   width: 100%;
   flex-direction: row;
