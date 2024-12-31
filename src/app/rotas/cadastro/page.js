@@ -5,13 +5,14 @@ import styles from './page.module.css'
 import Google from '../../../../public/logo-google.png'
 import Apple from '../../../../public/logo-apple.png'
 import Imagem from '../../../../public/logo-rs.png'
+import Logomarca from '@/app/componentes/Logomarca/Logomarca';
 
 export default function Cadastro(){
   return(
     <main className={styles.main}>
       <div className={styles.area1}>
 
-        <Image className={styles.imagem} src={Imagem}></Image>
+        <Logomarca></Logomarca>
 
       </div>
 

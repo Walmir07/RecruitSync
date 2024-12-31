@@ -1,0 +1,15 @@
+.logomarca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-logomarca{
+    font-size: 50px;
+}
+
+.imagem{
+    height: 370px;
+    width: 370px;
+  }
