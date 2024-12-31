@@ -20,8 +20,6 @@ export default function NavBar() {
          <ul>
            <li><Link href="#">Home</Link></li>
            <li><Link href="#">Contato</Link></li>
-           <li><Link href="#">Sobre</Link></li>
-           <li><Link href="#">Mais</Link></li>
          </ul>
         </div>
          
