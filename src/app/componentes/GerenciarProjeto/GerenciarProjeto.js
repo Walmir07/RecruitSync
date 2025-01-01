@@ -9,14 +9,14 @@ import db from '@/lib/db'
 
 export default async function GerenciarProjeto(){
     
-    const projetos = await db.query("SELECT * FROM projeto")
+    const projetos = await db.query("SELECT * FROM projeto");
 
     return(
 
         <div className='contGerenciar'>
 
                <div className='pesquisar'>
-                   <Image src={Lupa} className='Lupa'></Image>
+                   <Image src={Lupa} className='Lupa' alt="Imagem de lupa"></Image>
                    <input className='pesquisarProjeto' type='search' placeholder='Buscar projeto'></input>
                    <Link href="/rotas/criacao-de-projetos" className='criarNovo'>Criar novo</Link>
                </div>

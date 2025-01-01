@@ -30,7 +30,7 @@ export default async function Projeto({logo, nome, coordenador, instituicao, des
     return(
         <div className='contProjeto'>
             <section className="sessao1">
-                <Image className='logo-do-projeto' src={logo}></Image>
+                <Image className='logo-do-projeto' src={logo} alt="Logo do projeto"></Image>
             </section>
             <section className="sessao2">
                 <p><strong>Nome:</strong> {nome}</p> 

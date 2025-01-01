@@ -21,6 +21,7 @@ export default function NavBarGeral() {
            src={Bars}
            className='bars'
            onClick={showSidebar}
+           alt="Imagem de barrinhas de Navbar"
         >
         </Image>
         {sidebar && <Sidebar active={setSidebar}></Sidebar>}

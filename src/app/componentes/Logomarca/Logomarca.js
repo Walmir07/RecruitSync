@@ -5,7 +5,7 @@ import Imagem from '../../../../public/logomarca-rs.png'
 export default function(){
     return(
         <div className='logomarca'>
-            <Image className="imagem" src={Imagem} alt="Logo"></Image>
+            <Image className="imagem" src={Imagem} alt="Logomarca RecruitSync"></Image>
             <h1 className='titulo-logomarca'>RecruitSync</h1>
         </div>
     )

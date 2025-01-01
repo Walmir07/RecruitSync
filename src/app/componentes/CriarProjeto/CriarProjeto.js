@@ -1,20 +1,54 @@
+import { useState } from 'react'
 import './CriarProjeto.css'
 import testLogo from './../../../../public/logo-rs.png'
 import Link from 'next/link'
 
 export default function CriarProjeto(){
+    
+
+    const [nomeProjeto, setNomeProjeto] = useState('');
+    const [instituicao, setInstituicao] = useState('');
+    const [criterios, setCriterios] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        onAddProjeto({ nomeProjeto, instituicao, criterios })
+        setNomeProjeto('')
+        setInstituicao('')
+        setCriterios('')
+  }
+
+
     return(
         <div className='container-criar'>
 
-            <form className='formulario-criacao'>
+            <form className='formulario-criacao' onSubmit={handleSubmit}>
                 <section className='informacoes'>
                     <section className='sect-img'>
                         <input type="file" className="imagem-projeto"></input>
                     </section>
                     <section className='sect-inputs'>
-                        <input type='text' className='inputs' placeholder='Nome do projeto'></input>
-                        <input type='text' className='inputs' placeholder='Instituição'></input>
-                        <input type='text' className='inputs' placeholder='Critérios'></input>
+                        <input 
+                            type='text' 
+                            className='inputs' 
+                            placeholder='Nome do projeto'
+                            value={nomeProjeto}
+                            onChange={(e) => setNomeProjeto(e.target.value)}
+                        ></input>
+                        <input 
+                            type='text' 
+                            className='inputs' 
+                            placeholder='Instituição'
+                            value={instituicao}
+                            onChange={(e) => setInstituicao(e.target.value)}
+                        ></input>
+                        <input 
+                            type='text' 
+                            className='inputs' 
+                            placeholder='Critérios'
+                            value={criterios}
+                            onChange={(e) => setCriterios(e.target.value)}
+                        ></input>
                         <input type='text' className='inputs' placeholder='Vagas'></input>
                     </section>
                     <section className='sect-desc'>
@@ -46,7 +80,7 @@ export default function CriarProjeto(){
                     </section>
                 </section>
                 <section className='sect-botao'>
-                   <Link href='/rotas/home'><button className='criar-projeto'>Criar Projeto</button></Link>
+                   <Link href='/rotas/home'><button type="submit" className='criar-projeto'>Criar Projeto</button></Link>
                 </section>
             </form>
 
