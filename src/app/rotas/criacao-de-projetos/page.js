@@ -23,7 +23,7 @@ export default function Home() {
   }
 
   const addProjeto = async (projeto) => {
-    const response = await fetch('/api/projetos', {
+    const response = await fetch('../../api/projetos', { //Estava só /api/projetos
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -3,7 +3,7 @@ import './CriarProjeto.css'
 import testLogo from './../../../../public/logo-rs.png'
 import Link from 'next/link'
 
-export default function CriarProjeto(){
+export default function CriarProjeto({ onAddProjeto }){
     
 
     const [nomeProjeto, setNomeProjeto] = useState('');
@@ -80,7 +80,7 @@ export default function CriarProjeto(){
                     </section>
                 </section>
                 <section className='sect-botao'>
-                   <Link href='/rotas/home'><button type="submit" className='criar-projeto'>Criar Projeto</button></Link>
+                   <button type="submit" className='criar-projeto'>Criar Projeto</button>
                 </section>
             </form>
 
