@@ -5,7 +5,7 @@ import styles from './page.module.css'
 import Google from '../../../../public/logo-google.png'
 import Apple from '../../../../public/logo-apple.png'
 import Imagem from '../../../../public/logo-rs.png'
-import Logomarca from '@/app/componentes/Logomarca/Logomarca';
+import Logomarca from '@/comps/Logomarca/Logomarca';
 
 export default function Cadastro(){
   return(

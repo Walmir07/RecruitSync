@@ -4,8 +4,8 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 import { Questrial, Radio_Canada } from "next/font/google";
-import CriarProjeto from "@/app/componentes/CriarProjeto/CriarProjeto";
-import NavBarGeral from "@/app/componentes/NavBarGeral/NavBarGeral";
+import CriarProjeto from "@/comps/CriarProjeto/CriarProjeto";
+import NavBarGeral from "@/comps/NavBarGeral/NavBarGeral";
 
 export default function Home() {
 

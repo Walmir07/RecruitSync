@@ -3,7 +3,7 @@
 import './navbargeral.css'
 import Link from 'next/link';
 import Image from 'next/image';
-import Bars from '../../../../public/bars.svg'
+import Bars from '../../../public/bars.svg'
 import LoginRegist from '../LoginRegist/LoginRegist';
 import { useState } from 'react';
 import Sidebar from '../Sidebar/Sidebar';

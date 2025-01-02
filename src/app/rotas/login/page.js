@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from './page.module.css'
 import Imagem from '../../../../public/logo-rs.png'
-import Logomarca from '@/app/componentes/Logomarca/Logomarca'
+import Logomarca from '@/comps/Logomarca/Logomarca'
 
 export default function Login(){
     return(

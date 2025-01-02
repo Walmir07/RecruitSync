@@ -1,6 +1,6 @@
 import './InfoCandidato.css'
 import { getCandidatosById } from '@/lib/candidato'
-import FotoTeste from './../../../../public/logo-google.png'
+import FotoTeste from './../../../public/logo-google.png'
 import Image from 'next/image';
 
 export default async function InfoCandidato({ id }){

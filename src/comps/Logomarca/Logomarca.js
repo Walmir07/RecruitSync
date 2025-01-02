@@ -1,6 +1,6 @@
 import './Logomarca.css'
 import Image from 'next/image'
-import Imagem from '../../../../public/logomarca-rs.png'
+import Imagem from '../../../public/logomarca-rs.png'
 
 export default function(){
     return(

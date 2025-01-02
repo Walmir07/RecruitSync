@@ -1,5 +1,5 @@
 import './pesquisa.css'
-import Lupa from '../../../../public/search.svg'
+import Lupa from '../../../public/search.svg'
 import Image from 'next/image'
 
 function Pesquisa(){

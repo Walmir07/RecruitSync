@@ -2,9 +2,9 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 import { Questrial, Radio_Canada } from "next/font/google";
-import NavBarGeral from "../../../componentes/NavBarGeral/NavBarGeral";
-import InfoUsuarios from "@/app/componentes/InfoUsuarios/InfoUsuarios";
-import GaleriaProjetos from "../../../componentes/GaleriaProjetos/GaleriaProjetos";
+import NavBarGeral from "../../../../comps/NavBarGeral/NavBarGeral";
+import InfoUsuarios from "@/comps/InfoUsuarios/InfoUsuarios";
+import GaleriaProjetos from "../../../../comps/GaleriaProjetos/GaleriaProjetos";
 
 export default function Perfil({ params }) {
   return (

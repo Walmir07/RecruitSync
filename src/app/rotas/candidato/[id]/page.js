@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
-import NavBarGeral from "@/app/componentes/NavBarGeral/NavBarGeral";
-import InfoCandidato from "@/app/componentes/InfoCandidato/InfoCandidato";
+import NavBarGeral from "@/comps/NavBarGeral/NavBarGeral";
+import InfoCandidato from "@/comps/InfoCandidato/InfoCandidato";
 
 export default async function Candidato({ params }){
 

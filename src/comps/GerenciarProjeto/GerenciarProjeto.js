@@ -1,8 +1,8 @@
 import './gerenciarProjeto.css'
 import Image from 'next/image'
-import Lupa from '../../../../public/search.svg'
+import Lupa from '../../../public/search.svg'
 import Projeto from '../Projeto/Projeto'
-import Google from '../../../../public/logo-google.png'
+import Google from '../../../public/logo-google.png'
 import Link from 'next/link'
 import db from '@/lib/db'
 

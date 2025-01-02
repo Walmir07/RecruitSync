@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './CriarProjeto.css'
-import testLogo from './../../../../public/logo-rs.png'
 import Link from 'next/link'
 
 export default function CriarProjeto({ onAddProjeto }){
@@ -10,13 +9,50 @@ export default function CriarProjeto({ onAddProjeto }){
     const [instituicao, setInstituicao] = useState('');
     const [criterios, setCriterios] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+      
+        const projeto = { nomeProjeto, instituicao, criterios };
+      
+        try {
+          const res = await fetch('/api/projetos', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(projeto),
+          });
+      
+          if (!res.ok) {
+            // Se não for bem-sucedido, jogamos um erro
+            const errorData = await res.json();
+            throw new Error(`Erro ao criar projeto: ${errorData.error || res.statusText}`);
+          }
+      
+          const data = await res.json();
+          console.log('Projeto criado com sucesso:', data);
+          onAddProjeto(data); // Supondo que você tenha essa função para atualizar a lista de projetos
+      
+        } catch (error) {
+          console.error('Erro ao criar o projeto:', error);
+          // Exibir um feedback para o usuário, caso queira
+          alert('Falha ao criar o projeto. Tente novamente.');
+        }
+      
+        setNomeProjeto('');
+        setInstituicao('');
+        setCriterios('');
+      };
+           
+      
+
+    /*const handleSubmit = (e) => {
         e.preventDefault()
         onAddProjeto({ nomeProjeto, instituicao, criterios })
         setNomeProjeto('')
         setInstituicao('')
         setCriterios('')
-  }
+  }*/
 
 
     return(

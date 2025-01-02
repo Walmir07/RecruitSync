@@ -1,5 +1,5 @@
 import './perfil.css'
-import SemPerfil from '../../../../public/sem-foto.png'
+import SemPerfil from '../../../public/sem-foto.png'
 import Image from 'next/image'
 //import PropTypes from 'prop-types'
 

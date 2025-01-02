@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
-import NavBarGeral from "../../componentes/NavBarGeral/NavBarGeral";
-import ListaInscritos from "@/app/componentes/ListaInscritos/ListaInscritos";
+import NavBarGeral from "../../../comps/NavBarGeral/NavBarGeral";
+import ListaInscritos from "@/comps/ListaInscritos/ListaInscritos";
 
 export default function AcessarInscritos({ params }) {
   return (
