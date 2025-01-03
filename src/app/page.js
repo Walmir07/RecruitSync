@@ -2,9 +2,9 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 import { Questrial, Radio_Canada } from "next/font/google";
-import NavBar from "../comps/NavBar/NavBar";
-import Descricao from "../comps/Descricao/Descricao";
-import Pergunta from "../comps/Pergunta/Pergunta";
+import NavBar from "../componentes/NavBar/NavBar";
+import Descricao from "../componentes/Descricao/Descricao";
+import Pergunta from "../componentes/Pergunta/Pergunta";
 
 export default function Home() {
   return (
