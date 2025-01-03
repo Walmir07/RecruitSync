@@ -44,13 +44,13 @@ export default async function InfoUsuarios({ id }){
       <div className="divOpcoes">
         
         <div className="editar">
-          <Link href='#'><Image className="iconesEL" src={Config}></Image></Link>
-          <Link href='#'><h2 className="opcoesEL">Editar</h2></Link>
+          <Link href={`/perfil/${dados.id}/editar`}><Image className="iconesEL" src={Config}></Image></Link>
+          <Link href={`/perfil/${dados.id}/editar`}><h2 className="opcoesEL">Editar</h2></Link>
         </div>
         
         <div className="logout">
-          <Link href='/rotas/login'><Image className="iconesEL" src={Sair}></Image></Link>
-          <Link href='/rotas/login'><h2 className="opcoesEL">Log Out</h2></Link>
+          <Link href='/login'><Image className="iconesEL" src={Sair}></Image></Link>
+          <Link href='/login'><h2 className="opcoesEL">Log Out</h2></Link>
         </div>
         
       </div>

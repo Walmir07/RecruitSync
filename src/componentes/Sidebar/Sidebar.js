@@ -16,6 +16,7 @@ import Bell from '../../../public/bell.svg'
 //const dados = gerente.rows[0];
 
 function Sidebar({ active }) {
+  
   function closeSidebar() {
     active(false);
   }
@@ -29,7 +30,7 @@ function Sidebar({ active }) {
         <Pesquisa></Pesquisa>
 
         <SidebarItem Icone={House} Texto='Início' Caminho='/home'></SidebarItem>
-        <SidebarItem Icone={User} Texto='Perfil' Caminho="/perfil" /*{`/rotas/perfil/${dados.id}`}*/></SidebarItem>
+        <SidebarItem Icone={User} Texto='Perfil' Caminho={'/perfil/1'}/*{`/perfil/${dados.id}`}*/></SidebarItem>{/*Dados manuais*/}
         {/*<SidebarItem Icone={File} Texto='Projetos' Caminho='/rotas/projetos'></SidebarItem>*/}
       </div>
     </main>
