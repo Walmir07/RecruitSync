@@ -39,8 +39,8 @@ export default async function EditarPerfil({ id }){
                     </section>
                 </section>
                 <section className='section-acoes'>
-                    <button className='cancelar'>Cancelar</button>
-                    <button className='salvar'>Salvar</button>
+                    <button className='cancelar'>Cancelar edição</button>
+                    <button className='salvar'>Salvar alterações</button>
                 </section>
                 
             </form>
