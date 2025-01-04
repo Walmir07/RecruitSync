@@ -1,93 +1,92 @@
+"use client"
+
 import { useState } from 'react'
 import './CriarProjeto.css'
 import Link from 'next/link'
 
+function Cadastrado(){
+    alert("Projeto cadastrado");
+}
+
 export default function CriarProjeto({ onAddProjeto }){
     
-    const [nomeProjeto, setNomeProjeto] = useState('');
-    const [instituicao, setInstituicao] = useState('');
-    const [criterios, setCriterios] = useState('');
+const [nomeProjeto, setNomeProjeto] = useState('');
+const [instituicao, setInstituicao] = useState('');
+const [criterios, setCriterios] = useState('');
+const [vagas, setVagas] = useState('');
+const [descricao, setDescricao] = useState('');
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-      
-        const projeto = { nomeProjeto, instituicao, criterios };
-      
-        try {
-          const res = await fetch('/api/projetos', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(projeto),
-          });
-      
-          if (!res.ok) {
-            // Se não for bem-sucedido, jogamos um erro
-            const errorData = await res.json();
-            throw new Error(`Erro ao criar projeto: ${errorData.error || res.statusText}`);
-          }
-      
-          const data = await res.json();
-          console.log('Projeto criado com sucesso:', data);
-          onAddProjeto(data); // Supondo que você tenha essa função para atualizar a lista de projetos
-      
-        } catch (error) {
-          console.error('Erro ao criar o projeto:', error);
-          // Exibir um feedback para o usuário, caso queira
-          alert('Falha ao criar o projeto. Tente novamente.');
-        }
-      
-        setNomeProjeto('');
-        setInstituicao('');
-        setCriterios('');
-      };
-           
-      
+const handleSubmit = (e) => {
+  e.preventDefault();
+  onAddProjeto({ nomeProjeto, instituicao, criterios, vagas, descricao });
+  setNomeProjeto('');
+  setInstituicao('');
+  setCriterios('');
+  setVagas('');
+  setDescricao('');
+ }
 
-    /*const handleSubmit = (e) => {
-        e.preventDefault()
-        onAddProjeto({ nomeProjeto, instituicao, criterios })
-        setNomeProjeto('')
-        setInstituicao('')
-        setCriterios('')
-  }*/
-
-
-    return(
+  
+ return(
         <div className='container-criar'>
 
             <form className='formulario-criacao' onSubmit={handleSubmit}>
+
                 <section className='informacoes'>
                     <section className='sect-img'>
                         <input type="file" className="imagem-projeto"></input>
                     </section>
+
                     <section className='sect-inputs'>
+
                         <input 
-                            type='text' 
-                            className='inputs' 
+                            required
+                            type='text'
+                            className='inputs'
                             placeholder='Nome do projeto'
                             value={nomeProjeto}
                             onChange={(e) => setNomeProjeto(e.target.value)}
                         ></input>
+
                         <input 
+                            required
                             type='text' 
                             className='inputs' 
                             placeholder='Instituição'
                             value={instituicao}
                             onChange={(e) => setInstituicao(e.target.value)}
                         ></input>
-                        <input 
+
+                        <input
+                            required 
                             type='text' 
                             className='inputs' 
                             placeholder='Critérios'
                             value={criterios}
                             onChange={(e) => setCriterios(e.target.value)}
                         ></input>
-                        <input type='text' className='inputs' placeholder='Vagas'></input>
+
+                        <input
+                            required
+                            type='text' 
+                            className='inputs' 
+                            placeholder='Vagas'
+                            value={vagas}
+                            onChange={(e) => {setVagas(e.target.value)}}
+                        ></input>
+
                     </section>
+
                     <section className='sect-desc'>
-                        <textarea className='textarea' placeholder='Descrição do projeto'></textarea>
+
+                        <textarea
+                            required 
+                            className='textarea' 
+                            placeholder='Descrição do projeto'
+                            value={descricao}
+                            onChange={(e) => {setDescricao(e.target.value)}}
+                    ></textarea>
+
                     </section>
                 </section>
                 <section className='etapas'>
@@ -118,7 +117,6 @@ export default function CriarProjeto({ onAddProjeto }){
                    <button type="submit" className='criar-projeto'>Criar Projeto</button>
                 </section>
             </form>
-
         </div>
     )
 }

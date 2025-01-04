@@ -16,29 +16,23 @@ export async function GET() {
 
 export async function POST(request) {
   try {
-    const { nomeProjeto, instituicao, criterios } = await request.json();
+    const { nomeProjeto, instituicao, criterios, vagas, descricao } = await request.json()
+    console.log('Dados recebidos:', nomeProjeto, instituicao, criterios, vagas, descricao)
 
-    // Verificar se todos os campos obrigatórios foram enviados
-    if (!nomeProjeto || !instituicao || !criterios) {
-      return NextResponse.json({ error: 'Campos obrigatórios ausentes' }, { status: 400 });
-    }
+    const client = await pool.connect()
+    console.log('Conectado ao banco de dados')
 
-    // Verificar se o tipo dos campos está correto, se necessário
-    if (typeof nomeProjeto !== 'string' || typeof instituicao !== 'string' || typeof criterios !== 'string') {
-      return NextResponse.json({ error: 'Campos inválidos' }, { status: 400 });
-    }
-
-    const client = await pool.connect();
     const result = await client.query(
-      'INSERT INTO projeto (nomeProjeto, instituicao, criterios) VALUES ($1, $2, $3) RETURNING *',
-      [nomeProjeto, instituicao, criterios]
-    );
-    client.release();
+      'INSERT INTO projeto (nomeProjeto, instituicao, criterios, vagas, descricao) VALUES ($1, $2, $3, $4, $5) RETURNING *',
+      [nomeProjeto, instituicao, criterios, vagas, descricao]
+    )
+    console.log('Resultado da inserção:', result)
 
-    return NextResponse.json(result.rows[0], { status: 201 });
+    client.release()
+    return NextResponse.json(result.rows[1], { status: 201 }) 
   } catch (error) {
-    console.error('Erro ao adicionar projeto:', error);
-    return NextResponse.json({ error: 'Erro interno no servidor' }, { status: 500 });
+    console.error('Error adding projeto:', error)
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
   }
 }
 
