@@ -47,7 +47,8 @@ export default async function Projeto({logo, nome, coordenador, instituicao, des
             </section>
             <section className="sessao4">
                 <div className='situacao' /*style={{backgroundColor: {cor}}}*/>{situacao}</div>
-                <Link href="/acessar-inscritos" className='lk-acessar-inscritos'>Acessar inscritos</Link>
+                <Link href="/acessar-inscritos" className='lnk-acessar-inscritos'>Acessar inscritos</Link>
+                <button className='btn-excluir'>Excluir</button>
             </section>
         </div>
     )

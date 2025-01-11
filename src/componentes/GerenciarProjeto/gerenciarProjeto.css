@@ -49,13 +49,13 @@
 .projetos-criados{
     display: grid;
     grid-template-columns: 1fr;
-    flex-direction: column;
-    margin: 50px 0 0 0 ;
+    margin: 20px 0 0 0 ;
     background-color: #30363D;
-    grid-gap: 5px;
+    grid-gap: 25px;
     height: 75vh;
     padding: 20px 30px 20px 30px;
     overflow-y: scroll;
     scroll-behavior:auto;
     overflow: auto;
+    grid-auto-rows: min-content;
 }
