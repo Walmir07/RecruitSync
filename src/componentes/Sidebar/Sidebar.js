@@ -31,7 +31,7 @@ function Sidebar({ active }) {
 
         <SidebarItem Icone={House} Texto='Início' Caminho='/home'></SidebarItem>
         <SidebarItem Icone={User} Texto='Perfil' Caminho={'/perfil/1'}/*{`/perfil/${dados.id}`}*/></SidebarItem>{/*Dados manuais*/}
-        {/*<SidebarItem Icone={File} Texto='Projetos' Caminho='/rotas/projetos'></SidebarItem>*/}
+        <SidebarItem Icone={Bell} Texto='Notificações' Caminho='/notificacoes'></SidebarItem>
       </div>
     </main>
   )
