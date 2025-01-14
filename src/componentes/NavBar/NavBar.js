@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '../../../public/logo-rs.jpeg'
 import LoginRegist from '../LoginRegist/LoginRegist';
+import ModalContatos from '../ModalContatos/ModalContatos'
 
 export default function NavBar() {
     return (
@@ -19,7 +20,7 @@ export default function NavBar() {
       <div className="links">
          <ul>
            <li><Link href="#">Home</Link></li>
-           <li><Link href="#">Contato</Link></li>
+           <li><ModalContatos></ModalContatos></li>
          </ul>
         </div>
          
