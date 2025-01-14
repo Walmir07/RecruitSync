@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Lupa from '../../../public/search.svg'
 import Projeto from '../Projeto/Projeto'
 import Google from '../../../public/logo-google.png'
+import LogoMandacode from '../../../public/logo-mandacode.jpeg'
 import Link from 'next/link'
 import db from '@/lib/db'
 
@@ -23,7 +24,17 @@ export default async function GerenciarProjeto(){
                
             <div className='projetos-criados'>
 
-              {projetos.rows.map(p => (<Projeto /*logo={`../../../public/${p.logo}`}*/ nome={(p.nome)} coordenador={p.coordenador} instituicao={p.instituicao} descricao={p.descricao} situacao={p.situacao}></Projeto>))}
+              {projetos.rows.map(p => (
+              <Projeto
+                    logo={LogoMandacode}
+                    /*logo={`../../../public/${p.logo}`}*/
+                    nome={(p.nome)} 
+                    coordenador={p.coordenador} 
+                    instituicao={p.instituicao} 
+                    descricao={p.descricao} 
+                    situacao={p.situacao}
+                    >
+              </Projeto>))}
 
               {/*<Projeto logo={Google} nome='Google' coordenador='Walmir' instituicao='Google.com' descricao='“Explore oportunidades educacionais e inscreva-se para se tornar um bolsista!
 Descubra oportunidades de desenvolvimento acadêmico e profissional sob medida
