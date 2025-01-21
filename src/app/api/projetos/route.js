@@ -23,13 +23,13 @@ export async function POST(request) {
     console.log('Conectado ao banco de dados')
 
     const result = await client.query(
-      'INSERT INTO projeto (nomeProjeto, instituicao, criterios, vagas, descricao) VALUES ($1, $2, $3, $4, $5) RETURNING *',
-      [nomeProjeto, instituicao, criterios, vagas, descricao]
+      'INSERT INTO projeto (id_projeto, nome, instituicao, criterios, vagas, descricao) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *',
+      [parseInt(Math.random()*100+1), nomeProjeto, instituicao, criterios, vagas, descricao]
     )
     console.log('Resultado da inserção:', result)
 
     client.release()
-    return NextResponse.json(result.rows[1], { status: 201 }) 
+    return NextResponse.json(result.rows[0], { status: 201 }) 
   } catch (error) {
     console.error('Error adding projeto:', error)
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })

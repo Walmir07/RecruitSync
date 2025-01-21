@@ -16,15 +16,36 @@ const [criterios, setCriterios] = useState('');
 const [vagas, setVagas] = useState('');
 const [descricao, setDescricao] = useState('');
 
+const addProjeto = async (novoProjeto) => {
+  const response = await fetch('/api/projetos', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(novoProjeto),
+  });
+};
+
 const handleSubmit = (e) => {
   e.preventDefault();
-  onAddProjeto({ nomeProjeto, instituicao, criterios, vagas, descricao });
+  const novoProjeto = {
+    nomeProjeto,
+    criterios,
+    descricao,
+    vagas,
+    situacao: "TESTE",
+    coordenador: "TESTE.",
+    instituicao,
+    logo: "Teste..."
+  };
+  addProjeto(novoProjeto); // Adiciona novo projeto usando a API
+  //onAddProjeto({ nomeProjeto, instituicao, criterios, vagas, descricao });
   setNomeProjeto('');
   setInstituicao('');
   setCriterios('');
   setVagas('');
   setDescricao('');
- }
+}
 
   
  return(
