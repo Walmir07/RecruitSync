@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import { Questrial, Radio_Canada } from "next/font/google";
 import NavBarGeral from "../../componentes/NavBarGeral/NavBarGeral";
-import GerenciarProjeto from "@/componentes/GerenciarProjeto/GerenciarProjeto";
+import GerenciarProjeto from "@/app/home/components/GerenciarProjeto/GerenciarProjeto";
 
 export default function Projetos() {
   return (

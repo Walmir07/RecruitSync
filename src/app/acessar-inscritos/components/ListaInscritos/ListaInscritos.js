@@ -1,5 +1,5 @@
 import './ListaInscritos.css'
-import DisplayCandidato from '../DisplayCandidato/DisplayCandidato'
+import DisplayCandidato from '../../../../componentes/DisplayCandidato/DisplayCandidato'
 import db from '@/lib/db'
 
 export default async function ListaInscritos(){

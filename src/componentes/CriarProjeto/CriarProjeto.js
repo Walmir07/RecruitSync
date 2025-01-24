@@ -9,7 +9,7 @@ function Cadastrado(){
 }
 
 export default function CriarProjeto({ onAddProjeto }){
-    
+
 const [nomeProjeto, setNomeProjeto] = useState('');
 const [instituicao, setInstituicao] = useState('');
 const [criterios, setCriterios] = useState('');

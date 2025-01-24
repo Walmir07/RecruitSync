@@ -1,31 +1,10 @@
+"Use client"
 import './projeto.css'
 import Image from 'next/image'
 import db from '@/lib/db'
 import Link from 'next/link'
 
 export default async function Projeto({logo, nome, coordenador, instituicao, descricao, situacao}){
-
-    /*const projetos = await db.query("SELECT * FROM projeto")
-
-    let situacaoP = projetos.situacao;
-    console.log(situacaoP)
-
-    function corSituacao({situacaoP}){
-
-        let cor;
-
-        if(situacaoP === "Concluído"){
-            cor = "#18902c"
-        }
-        else if(situacaoP === "Em andamento"){
-            cor = "#D5D519"
-        }
-        else{
-            cor = "#e50e0e;"
-        }
-        return cor
-    }*/
-
 
     return(
         <div className='contProjeto'>

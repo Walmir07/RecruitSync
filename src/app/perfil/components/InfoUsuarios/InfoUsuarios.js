@@ -1,9 +1,9 @@
 import './infoUsuarios.css'
-import SemPerfil from '../../../public/sem-foto.png'
+import SemPerfil from '../../../../../public/sem-foto.png'
 import Link from 'next/link'
 import Image from 'next/image'
-import Config from '../../../public/gear.svg'
-import Sair from '../../../public/close.svg'
+import Config from '../../../../../public/gear.svg'
+import Sair from '../../../../../public/close.svg'
 import db from '@/lib/db';
 import { getCoordenadoresById } from '@/lib/coordenador'
 

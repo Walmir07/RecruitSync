@@ -1,4 +1,4 @@
-import DisplayProjeto from '../DisplayProjeto/DisplayProjeto'
+import DisplayProjeto from '../../../../componentes/DisplayProjeto/DisplayProjeto'
 import './galeriaProjetos.css';
 import db from "@/lib/db";
 
