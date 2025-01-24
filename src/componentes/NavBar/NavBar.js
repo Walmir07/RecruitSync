@@ -19,7 +19,7 @@ export default function NavBar() {
         <h1>RecruitSync</h1>
       <div className="links">
          <ul>
-           <li><Link href="#">Home</Link></li>
+           <li><Link href="/app">Home</Link></li>
            <li><ModalContatos></ModalContatos></li>
          </ul>
         </div>
