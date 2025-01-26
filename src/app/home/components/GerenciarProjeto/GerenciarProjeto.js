@@ -33,8 +33,8 @@ export default async function GerenciarProjeto(){
 
               {projetos.rows.map(p => (
               <Projeto
-                    logo={LogoMandacode}
-                    /*logo={`../../../public/${p.logo}`}*/
+                    /*logo={`/${p.logo}`}*/
+                    logo={p.logo ? `/${p.logo}` : '/img-reuniao1.jpeg'}
                     nome={(p.nome)} 
                     coordenador={p.coordenador} 
                     instituicao={p.instituicao} 
