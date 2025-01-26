@@ -47,6 +47,20 @@ const handleSubmit = (e) => {
   setDescricao('');
 }
 
+// Organização de input de imagem:
+
+const [image, setImage] = useState(null);
+
+  const handleImageUpload = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImage(reader.result); // Atualiza o estado com a imagem carregada
+      };
+      reader.readAsDataURL(file); // Lê o arquivo como uma URL de dados
+    }
+};
   
  return(
         <div className='container-criar'>
@@ -55,7 +69,21 @@ const handleSubmit = (e) => {
 
                 <section className='informacoes'>
                     <section className='sect-img'>
-                        <input type="file" className="imagem-projeto"></input>
+
+                    <h4>Imagem do projeto</h4>
+
+                    <label htmlFor="imageUpload" className="image-upload">
+                    <input
+                        type="file"
+                        id="imageUpload"
+                        name="image"
+                        accept="image/*"
+                        onChange={handleImageUpload}
+                    />
+                    <span className="add-image">+</span>
+                    {image && <img src={image} alt="Uploaded" />}
+                    </label>
+
                     </section>
 
                     <section className='sect-inputs'>
