@@ -1,18 +1,16 @@
 .contGaleria{
     display: flex;
     background-color: #30363D;
-    height: 300px;
-    width: 70%;
+    height: 330px;
+    width: 75%;
     flex-direction: column;
     padding: 20px;
     margin-left: 100px;
     margin-right: 100px;
     border-radius: 25px;
     margin-left: 100px;
-    margin-right: 100px;
     border-radius: 25px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 25px;
   }
   
   .titulos{

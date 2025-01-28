@@ -1,29 +1,30 @@
 .contUsuario{
     background-color: #30363D;
     /*background-image: linear-gradient(to bottom, #0a5517, #3C8736);*/
-    height: 300px;
-    width: 70%;
+    height: 330px;
+    width: 75%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 100px;
     margin-right: 100px;
     border-radius: 25px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-top: 30px;
   }
   
   .divFoto{
     display: flex;
     align-items: center;
     /*background-color: lightblue;*/
-    width: 100%;
+    width: 80%;
   }
   
   .divInfo{
     display: flex;
     /*background-color: lightyellow;*/
-    width: 100%;
+    font-size: 17px;
+    width: 120%;
     padding: 1px 0 1px 0;
     justify-content: center;
     flex-direction: column;
@@ -33,7 +34,7 @@
   
   .divOpcoes{
     /*background-color: lightpink;*/
-    width: 100%;
+    width: 80%;
   }
   
   .sessoes{
@@ -41,9 +42,9 @@
     align-items: center;
     background-color: #D9D9D9;
     color: black;
-    height: 36px;
-    margin: 10px 0 10px 0;
-    border-radius: 5px;
+    height: 50px;
+    margin: 15px 0 15px 0;
+    border-radius: 10px;
     padding-left: 15px;
   }
   

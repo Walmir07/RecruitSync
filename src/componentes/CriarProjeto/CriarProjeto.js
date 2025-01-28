@@ -187,7 +187,7 @@ const [documento, setDocumento] = useState(null);
                         <span className="add-documento">{documento ? "" : "+"}</span>
                         {documento && <img src={documento} alt="Arquivo adicionado" />}
                         </label>
-
+ 
                     </section>
                 </section>
                 <section className='sect-botao'>
