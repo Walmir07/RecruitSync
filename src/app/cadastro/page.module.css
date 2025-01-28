@@ -46,8 +46,8 @@
 
 .title{
   text-align: center;
-  font-size: 45px;
-  margin: 0 0 20px 0;
+  font-size: 43px;
+  margin: 20px 0 30px 0;
 }
 
 .text1{
@@ -58,6 +58,7 @@
 .titulos{
    display: flex;
    justify-content: center;
+   align-items: center;
    flex-direction: column;
    padding: 0 0 70px 0;
    width: 20vw;
@@ -131,20 +132,22 @@
   flex-direction: row;
   margin: 35px 0 35px 0;
   /*background-color: rgb(29, 38, 117);*/
-  width: 20vw;
+  width: 100%;
   align-items: center;
   justify-content: center;
+  /*background-color: aqua;*/
 }
 
 .linha{
   /*background-color: blanchedalmond;*/
-  width: 7vw;
+  width: 100%;
   height: 0vh;
 }
 
 .owr{
   margin: 0 5px 0 5px;
   font-size: 15px;
+  white-space: nowrap;
 }
 
 .opcoes{

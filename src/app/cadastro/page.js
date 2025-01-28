@@ -21,21 +21,21 @@ export default function Cadastro(){
           <form className={styles.form}>
 
             <section className={styles.titulos}>
-                <h1 className={styles.title}>Create an account</h1>
-                <p className={styles.text1}>Already have an account? <Link className={styles.text3} href="/rotas/login">Log in</Link></p> 
+                <h1 className={styles.title}>Criar uma conta</h1>
+                <p className={styles.text1}>Já possui uma conta? <Link className={styles.text3} href="/login">Log in</Link></p> 
             </section>
 
          <section className={styles.inputs}>
-                <input type='text' className={styles.input} placeholder='First name'></input>
-                <input type='text' className={styles.input} placeholder='Last name'></input>
+                <input type='text' className={styles.input} placeholder='Nome'></input>
+                <input type='text' className={styles.input} placeholder='Sobrenome'></input>
          </section>
 
          <section className={styles.inputs}>
-                <input type='email' className={styles.input2} placeholder='Email'></input>
+                <input type='email' className={styles.input2} placeholder='Digite seu email'></input>
          </section>
 
          <section className={styles.inputs}>
-                <input type='password' className={styles.input2} placeholder='Enter your passwrod'></input>
+                <input type='password' className={styles.input2} placeholder='Digite sua senha'></input>
          </section>
 
          <section className={styles.espaco}>
@@ -43,11 +43,11 @@ export default function Cadastro(){
          </section>
 
          <section className='inputs'>
-              <Link href='/login'><button className={styles.criar} type='submit'>Create account</button></Link>
+              <Link href='/login'><button className={styles.criar} type='submit'>Criar conta</button></Link>
          </section>
 
          <section className={styles.rows}>
-             <hr className={styles.linha} /> <p className={styles.owr}>Or regist with</p>  <hr className={styles.linha} />
+             <hr className={styles.linha} /> <p className={styles.owr}>Ou registre com</p>  <hr className={styles.linha} />
          </section>
 
          <section className={styles.opcoes}>

@@ -18,22 +18,22 @@ export default function Login(){
           <form className={styles.form}>
 
             <section className={styles.titulos}>
-                <h1 className={styles.title}>Access your account</h1>
+                <h1 className={styles.title}>Acessar sua conta</h1>
             </section>
 
          <section className={styles.inputs}>
-                <input type='email' className={styles.input2} placeholder='Email'></input>
+                <input type='email' className={styles.input2} placeholder='Digite seu email'></input>
          </section>
 
          <section className={styles.inputs}>
-                <input type='password' className={styles.input2} placeholder='Enter your passwrod'></input>
+                <input type='password' className={styles.input2} placeholder='Digite sua senha'></input>
          </section>
 
          <section className={styles.sectioncheck}>
          </section>
 
          <section className='inputs'>
-              <Link  href='/home'><button className={styles.criar} type='submit'>Access Account</button></Link>
+              <Link  href='/home'><button className={styles.criar} type='submit'>Acessar conta</button></Link>
          </section>
 
           </form>
