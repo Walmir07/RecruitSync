@@ -30,8 +30,6 @@ export default function Login(){
          </section>
 
          <section className={styles.sectioncheck}>
-              <input className={styles.checkbox} type='checkbox'></input>
-              <p className={styles.text2}>Save your password</p>
          </section>
 
          <section className='inputs'>
