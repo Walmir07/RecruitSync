@@ -81,7 +81,7 @@ const [documento, setDocumento] = useState(null);
         <div className='container-criar'>
 
             <form className='formulario-criacao' onSubmit={handleSubmit}>
-
+              
                 <section className='informacoes'>
                     <section className='sect-img'>
 
@@ -95,10 +95,10 @@ const [documento, setDocumento] = useState(null);
                         accept="image/*"
                         onChange={handleImageUpload}
                     />
-                    <span className="add-image">+</span>
+                    <span className="add-image">{image ? "" : "+"}</span>
                     {image && <img src={image} alt="Uploaded" />}
                     </label>
-
+                    
                     </section>
 
                     <section className='sect-inputs'>
@@ -184,7 +184,7 @@ const [documento, setDocumento] = useState(null);
                             accept="accept=.png, .jpeg, .jpg, .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .txt"
                             onChange={handleDocumentoUpload}
                         />
-                        <span className="add-documento">+</span>
+                        <span className="add-documento">{documento ? "" : "+"}</span>
                         {documento && <img src={documento} alt="Arquivo adicionado" />}
                         </label>
 
