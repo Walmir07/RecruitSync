@@ -61,6 +61,21 @@ const [image, setImage] = useState(null);
       reader.readAsDataURL(file); // Lê o arquivo como uma URL de dados
     }
 };
+
+// Input de entrevista de seleção:
+
+const [documento, setDocumento] = useState(null);
+
+  const handleDocumentoUpload = (event) => {
+    const arquivo = event.target.files[0];
+    if (arquivo) {
+      const readerDoc = new FileReader();
+      readerDoc.onloadend = () => {
+        setDocumento(readerDoc.result);
+      };
+      readerDoc.readAsDataURL(arquivo);
+    }
+};
   
  return(
         <div className='container-criar'>
@@ -159,7 +174,20 @@ const [image, setImage] = useState(null);
                     </section>
                     <section className='etapa3'>
                         <h4 className='titulos-etapas'>Entrevista de seleção</h4>
-                        <input className="entrevista" type="file" name="entrevista" accept="image/png, image/jpeg" />
+
+
+                        <label htmlFor="documentoUpload" className="documento-upload">
+                        <input
+                            type="file"
+                            id="documentoUpload"
+                            name="documento"
+                            accept="accept=.png, .jpeg, .jpg, .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .txt"
+                            onChange={handleDocumentoUpload}
+                        />
+                        <span className="add-documento">+</span>
+                        {documento && <img src={documento} alt="Arquivo adicionado" />}
+                        </label>
+
                     </section>
                 </section>
                 <section className='sect-botao'>
