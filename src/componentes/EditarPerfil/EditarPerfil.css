@@ -54,7 +54,7 @@
     width: 170px;
     height: 40px;
     margin: 50px;
-    font-size: 15px;
+    font-size: 17px;
     border: none;
     border-radius: 10px;
 }
@@ -70,6 +70,7 @@
 .foto-perfil{
     width: 150px;
     height: 150px;
+    border-radius: 50%;
 }
 
 .titulos{

@@ -1,6 +1,6 @@
 import './EditarPerfil.css'
 import Image from 'next/image'
-import ImagemTest from './../../../public/logo-google.png'
+import SemPerfil from '../../../public/sem-foto.png'
 import db from '@/lib/db';
 import { getCoordenadoresById } from '@/lib/coordenador'
 
@@ -19,7 +19,7 @@ export default async function EditarPerfil({ id }){
 
                 <section className='sect-infos'>
                     <section className='sect-info1'>
-                        <Image className='foto-perfil' src={ImagemTest} alt="Foto de perfil do usuário"></Image>
+                        <Image className='foto-perfil' src={SemPerfil} alt="Foto de perfil do usuário"></Image>
                     </section>
                     <section className='sect-info2'>
                         <h2 className='titulos'>Nome:</h2>
