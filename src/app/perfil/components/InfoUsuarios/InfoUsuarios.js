@@ -27,10 +27,10 @@ export default async function InfoUsuarios({ id }){
 
     return(
       <div className="contUsuario">
+
           <div className="divFoto">
-          <h2 className="tituloFoto">Foto</h2>
-          <Image src={ /*fotoPerfil ||*/ SemPerfil} className="foto" alt='Foto de perfil'></Image>
-      </div>
+              <Image src={ /*fotoPerfil ||*/ SemPerfil} className="foto" alt='Foto de perfil'></Image>
+          </div>
 
       <div className="divInfo">
         <h2 className="titulos">Nome:</h2>
@@ -44,13 +44,13 @@ export default async function InfoUsuarios({ id }){
       <div className="divOpcoes">
         
         <div className="editar">
-          <Link href={`/perfil/${dados.id}/editar`}><Image className="iconesEL" src={Config}></Image></Link>
-          <Link href={`/perfil/${dados.id}/editar`}><h2 className="opcoesEL">Editar</h2></Link>
+          <Link href={`/perfil/${dados.id_coordenador}/editar`}><Image className="iconesEL" src={Config}></Image></Link>
+          <Link href={`/perfil/${dados.id_coordenador}/editar`}><h2 className="opcoesEL">Editar</h2></Link>
         </div>
         
         <div className="logout">
           <Link href='/login'><Image className="iconesEL" src={Sair}></Image></Link>
-          <Link href='/login'><h2 className="opcoesEL">Log Out</h2></Link>
+          <Link href='/login'><h2 className="opcoesEL">Sair</h2></Link>
         </div>
         
       </div>

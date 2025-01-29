@@ -1,8 +1,8 @@
 .contUsuario{
     background-color: #30363D;
     /*background-image: linear-gradient(to bottom, #0a5517, #3C8736);*/
-    height: 330px;
-    width: 75%;
+    height: 340px;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,6 +16,7 @@
   .divFoto{
     display: flex;
     align-items: center;
+    justify-content: center;
     /*background-color: lightblue;*/
     width: 80%;
   }
@@ -35,6 +36,7 @@
   .divOpcoes{
     /*background-color: lightpink;*/
     width: 80%;
+    padding: 30px;
   }
   
   .sessoes{
@@ -50,11 +52,11 @@
   
   .foto{
     /*background-color: #D9D9D9;*/
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
     border-radius: 100%;
   }
-  
+
   .tituloFoto{
     color: white;
     position: relative;
@@ -74,20 +76,20 @@
   .iconesEL{
     height: 30px;
     width: 30px;
-    margin-right: 5px;
+    margin: 5px;
   }
   
   .opcoesEL{
     color: white;
-    font-size: 15px;
+    font-size: 20px;
   }
   
   .editar, .logout{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /*background-color: blue;*/
     width: 40%;
+    margin: 5px 0 5px 0;
   }
   
   .divOpcoes{

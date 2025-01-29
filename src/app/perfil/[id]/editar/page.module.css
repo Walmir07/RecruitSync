@@ -1,0 +1,12 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+  }
+  
+.titulo{
+    margin-top: 25px;
+    text-align: start;
+}

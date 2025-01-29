@@ -4,11 +4,11 @@ import { useState } from 'react'
 import './CriarProjeto.css'
 import Link from 'next/link'
 
-function Cadastrado(){
-    alert("Projeto cadastrado");
-}
-
 export default function CriarProjeto({ onAddProjeto }){
+
+function projetoCriado(){
+  alert("Projeto criado com sucesso!");
+}
 
 const [nomeProjeto, setNomeProjeto] = useState('');
 const [instituicao, setInstituicao] = useState('');
@@ -45,6 +45,7 @@ const handleSubmit = (e) => {
   setCriterios('');
   setVagas('');
   setDescricao('');
+  projetoCriado();
 }
 
 // Organização de input de imagem:
