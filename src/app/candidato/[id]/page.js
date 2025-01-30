@@ -5,10 +5,12 @@ import InfoCandidato from "@/app/candidato/components/InfoCandidato/InfoCandidat
 export default async function Candidato({ params }){
 
     return(
-        <div>
+        <div className={styles.main}>
             <NavBarGeral></NavBarGeral>
-            <h1 className={styles.titulo}>Perfil do candidato: {/*projeto.nome*/}</h1>
-            <InfoCandidato id={params.id}/>
+            <div className={styles.content}>
+                <h1 className={styles.titulo}>Perfil do candidato: {/*projeto.nome*/}</h1>
+                <InfoCandidato id={params.id}/>
+            </div>
         </div>
     )
 };
