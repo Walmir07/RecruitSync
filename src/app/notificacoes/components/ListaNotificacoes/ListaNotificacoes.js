@@ -4,6 +4,7 @@ import db from '@/lib/db';
 
 export default async function ListaNotificacoes(){
 
+    const projetos = await db.query("SELECT * FROM projeto");
     const candidatos = await db.query("select * from candidato");
     const quantCandidato = await db.query("select count(*) from candidato")
 
@@ -11,7 +12,7 @@ export default async function ListaNotificacoes(){
     return(
         <div className='lista-notificacoes'>
             <p>Você possui {quantCandidato.rows[0].count} notificações</p>
-            {candidatos.rows.map( c => (<Notificacao nomeCandidato={c.nome}></Notificacao>))}
+            {candidatos.rows.map( c => (<Notificacao nomeCandidato={c.nome} nomeProjeto={"Mandacode"} ></Notificacao>))}
         </div>
     )
 }

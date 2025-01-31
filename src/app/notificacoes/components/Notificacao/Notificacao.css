@@ -3,36 +3,52 @@
     background-color: #4A5C6A;
     align-items: center;
     justify-content: space-around;
-    height: 85px;
+    height: 90px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+.secao1{
+    display: flex;    align-items: center;
+    justify-content: flex-start;
+    height: 90px;
+    width: 100%;
+    color: Black;
+    padding: 20px;
+}
+
+.secao2{
+    display: flex;    align-items: center;
+    justify-content: flex-end;
+    height: 90px;
+    width: 100%;
     color: Black;
     padding: 20px;
 }
 
 .nome-candidato{
-    font-size: 20px;
+    font-size: 23px;
 }
 
 .logo-projeto{
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
     background-color: aqua;
-    margin: 10px;
+    margin: 10px 30px 10px 10px;
 }
 
 .btn-excluir{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30px;
-    width: 100px;
+    height: 45px;
+    width: 110px;
     margin: 10px 10px 0 0;
     color: rgb(255, 255, 255); 
     background-color: #ff0000;
     border: none;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 17px;
     cursor: pointer;
 }
