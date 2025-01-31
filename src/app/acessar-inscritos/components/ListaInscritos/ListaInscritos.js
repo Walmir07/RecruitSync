@@ -1,5 +1,6 @@
 import './ListaInscritos.css'
-import DisplayCandidato from '../../../../componentes/DisplayCandidato/DisplayCandidato'
+import DisplayCandidato from '../DisplayCandidato/DisplayCandidato'
+import FotoTeste from './../../../../../public/sem-foto.png'
 import db from '@/lib/db'
 
 export default async function ListaInscritos(){
@@ -11,7 +12,7 @@ export default async function ListaInscritos(){
     return(
         <div className='lista-inscritos'>
             <p>Quantidade de inscritos: {quantCandidato.rows[0].count}</p>
-            {candidatos.rows.map( c => (<DisplayCandidato nomeCandidato={c.nome} telaCandidato={`/candidato/${c.id_candidato}`}></DisplayCandidato>))}
+            {candidatos.rows.map( c => (<DisplayCandidato fotoCandidato={FotoTeste} nomeCandidato={c.nome} telaCandidato={`/candidato/${c.id_candidato}`}></DisplayCandidato>))}
         </div>
     )
 }

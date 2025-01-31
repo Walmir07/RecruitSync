@@ -2,9 +2,9 @@
     display: flex;
     background-color: #4A5C6A;
     align-items: center;
-    height: 85px;
+    height: 90px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
     color: Black;
     padding: 20px;
 }
@@ -14,9 +14,8 @@
 }
 
 .foto-candidato{
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
-    background-color: aqua;
-    margin: 10px;
+    margin: 10px 25px 10px 10px;
 }
