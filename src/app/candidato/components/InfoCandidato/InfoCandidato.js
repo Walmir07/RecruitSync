@@ -1,6 +1,6 @@
 import './InfoCandidato.css'
 import { getCandidatosById } from '@/lib/candidato'
-import FotoTeste from './../../../../../public/logo-google.png'
+import FotoTeste from './../../../../../public/sem-foto.png'
 import Image from 'next/image';
 
 export default async function InfoCandidato({ id }){
@@ -29,10 +29,22 @@ export default async function InfoCandidato({ id }){
                         <h2 className="titulos">Matrícula:</h2>
                             <div className="sessoes">{dados.matricula}</div>
                     </section>
+            </section> 
+
+            <section className='linha'>
+                <hr></hr>
             </section>
+
             <section className='cont2'>
-                <div>Teste</div>
+                    <h2 className="titulos">Link do currículo:</h2>
+                    <div className="link-curriculo">{dados.curriculo}</div>
             </section>
+
+            <section className='botoes'>
+                    <button className='btn-reprovar'>Reprovar</button>
+                    <button className='btn-aprovar'>Aprovar</button>
+            </section>
+
         </div>
     )
 }
