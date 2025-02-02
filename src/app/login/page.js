@@ -33,7 +33,7 @@ export default function Login(){
          </section>
 
          <section className='inputs'>
-              <Link  href='/home'><button className={styles.criar} type='submit'>Acessar conta</button></Link>
+              <Link  href='/home'><button className={styles.acessar} type='submit'>Acessar conta</button></Link>
          </section>
 
           </form>

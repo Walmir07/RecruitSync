@@ -122,13 +122,14 @@
   color: rgb(54, 54, 255);
 }
 
-.criar{
+.acessar{
   height: 60px;
   width: 35vw;
   border-radius: 10px;
   border: 2px solid white;
   font-size: 20px;
   background-color: rgb(0, 0, 0);
+  cursor: pointer;
 }
 
 

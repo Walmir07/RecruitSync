@@ -11,7 +11,7 @@ export default async function ListaInscritos(){
 
     return(
         <div className='lista-inscritos'>
-            <p>Quantidade de inscritos: {quantCandidato.rows[0].count}</p>
+            <p>Quantidade de candidatos: {quantCandidato.rows[0].count}</p>
             {candidatos.rows.map( c => (<DisplayCandidato fotoCandidato={FotoTeste} nomeCandidato={c.nome} telaCandidato={`/candidato/${c.id_candidato}`}></DisplayCandidato>))}
         </div>
     )
