@@ -15,6 +15,9 @@ const [instituicao, setInstituicao] = useState('');
 const [criterios, setCriterios] = useState('');
 const [vagas, setVagas] = useState('');
 const [descricao, setDescricao] = useState('');
+const [linkProva, setLinkProva] = useState('');
+const [dinamicaGrupo, setDinamicaGrupo] = useState('');
+const [textoEntrevista, setTextoEntrevista] = useState('');
 
 const addProjeto = async (novoProjeto) => {
   const response = await fetch('/api/projetos', {
@@ -36,7 +39,10 @@ const handleSubmit = (e) => {
     situacao: "TESTE",
     coordenador: "TESTE.",
     instituicao,
-    logo: "Teste..."
+    logo: "Teste...",
+    linkProva,
+    dinamicaGrupo,
+    textoEntrevista,
   };
   addProjeto(novoProjeto); // Adiciona novo projeto usando a API
   //onAddProjeto({ nomeProjeto, instituicao, criterios, vagas, descricao });
@@ -46,6 +52,9 @@ const handleSubmit = (e) => {
   setVagas('');
   setDescricao('');
   projetoCriado();
+  setLinkProva('');
+  setDinamicaGrupo('');
+  setTextoEntrevista('');
 }
 
 // Organização de input de imagem:
@@ -163,6 +172,8 @@ const [image, setImage] = useState(null);
                             className='link-prova' 
                             type="text" 
                             placeholder="Link do formulário"
+                            value={linkProva}
+                            onChange={(e) => setLinkProva(e.target.value)}
                         ></input>
                     </section>
 
@@ -172,6 +183,8 @@ const [image, setImage] = useState(null);
                             className='dinamica-grupo'
                             type="text" 
                             placeholder="Dinâmica de grupo"
+                            value={dinamicaGrupo}
+                            onChange={(e) => setDinamicaGrupo(e.target.value)}
                         ></input>
                     </section>
 
@@ -180,7 +193,10 @@ const [image, setImage] = useState(null);
                         <input 
                             className='texto-entrevista' 
                             type="text" 
-                            placeholder="Informações entrevista"></input>
+                            placeholder="Informações entrevista"
+                            value={textoEntrevista}
+                            onChange={(e) => setTextoEntrevista(e.target.value)}
+                        ></input>
                     </section>
 
                 </section>
