@@ -1,22 +1,24 @@
+'use client'
 import './gerenciarProjeto.css'
 import Image from 'next/image'
 import Lupa from '../../../../../public/search.svg'
 import Projeto from '../../../../componentes/Projeto/Projeto'
 import LogoMandacode from '../../../../../public/logo-mandacode.jpeg'
 import Link from 'next/link'
-import db from '@/lib/db'
+import { useEffect, useState } from 'react'
 
+export default function GerenciarProjeto(){
+    const [projetos, setProjetos] = useState([]);
 
-export default async function GerenciarProjeto(){
-    
-    const projetos = await db.query("SELECT * FROM projeto");
+    const fetchProjetos = async () => {
+        const res = await fetch('/api/projetos');
+        const data = await res.json();
+        setProjetos(data);
+    };
 
-    
-    const deleteProjeto = async (id) => {
-        const response = await fetch(`/api/projetos/${id}`, {
-            method: 'DELETE'
-        });
-    }
+    useEffect(() => {
+        fetchProjetos();
+    }, [projetos]);
     
 
     return(
@@ -31,8 +33,9 @@ export default async function GerenciarProjeto(){
                
             <div className='projetos-criados'>
 
-              {projetos.rows.map(p => (
+              {projetos.map(p => (
               <Projeto
+                    id={p.id_projeto}
                     /*logo={`/${p.logo}`}*/
                     logo={p.logo ? `/${p.logo}` : '/img-reuniao1.jpeg'}
                     nome={(p.nome)} 
@@ -40,6 +43,7 @@ export default async function GerenciarProjeto(){
                     instituicao={p.instituicao} 
                     descricao={p.descricao} 
                     situacao={p.situacao}
+                    onExclude={() => setProjetos([...projetos])}
                     >
               </Projeto>))}
 

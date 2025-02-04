@@ -1,10 +1,15 @@
-"Use client"
+"use client"
 import './projeto.css'
 import Image from 'next/image'
-import db from '@/lib/db'
 import Link from 'next/link'
 
-export default async function Projeto({logo, nome, coordenador, instituicao, descricao, situacao}){
+export default function Projeto({id, logo, nome, coordenador, instituicao, descricao, situacao, onExclude}){
+
+    const deleteProjeto = async (id) => {
+        const response = await fetch(`/api/projetos/${id}`, {
+            method: 'DELETE'
+        });
+    }
 
     return(
         <div className='contProjeto'>
@@ -28,7 +33,10 @@ export default async function Projeto({logo, nome, coordenador, instituicao, des
                 <div className='situacao' /*style={{backgroundColor: {cor}}}*/>{situacao}</div>
                 <Link href="/acessar-inscritos" className='lnk-acessar-inscritos'>Acessar candidatos</Link>
                 <div className="sect-btn">
-                    <button className='btn-excluir'>Excluir</button>
+                    <button className='btn-excluir' onClick={() => {
+                        deleteProjeto(id);
+                        onExclude();
+                    }}>Excluir</button>
                 </div>
             </section>
         </div>
