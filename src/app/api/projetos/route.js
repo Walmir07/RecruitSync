@@ -16,15 +16,15 @@ export async function GET() {
 
 export async function POST(request) {
   try {
-    const { nomeProjeto, instituicao, criterios, vagas, descricao, linkProva, dinamicaGrupo, textoEntrevista } = await request.json()
-    console.log('Dados recebidos:', nomeProjeto, instituicao, criterios, vagas, descricao, linkProva, dinamicaGrupo, textoEntrevista)
+    const { nomeProjeto, instituicao, criterios, vagas, descricao, linkProva, dinamicaGrupo, textoEntrevista, analiseCurricular } = await request.json()
+    console.log('Dados recebidos:', nomeProjeto, instituicao, criterios, vagas, descricao, linkProva, dinamicaGrupo, textoEntrevista, analiseCurricular)
 
     const client = await pool.connect()
     console.log('Conectado ao banco de dados')
 
     const result = await client.query(
-      'INSERT INTO projeto (id_projeto, nome, instituicao, criterios, vagas, situacao, descricao, link_prova, dinamica_grupo, texto_entrevista) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *',
-      [parseInt(Math.random()*100+1), nomeProjeto, instituicao, criterios, vagas,"Em andamento", descricao, linkProva, dinamicaGrupo, textoEntrevista]
+      'INSERT INTO projeto (id_projeto, nome, instituicao, criterios, vagas, situacao, descricao, link_prova, dinamica_grupo, texto_entrevista, analise_curricular) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING *',
+      [parseInt(Math.random()*100+1), nomeProjeto, instituicao, criterios, vagas,"Em andamento", descricao, linkProva, dinamicaGrupo, textoEntrevista, analiseCurricular]
     )
     console.log('Resultado da inserção:', result)
 

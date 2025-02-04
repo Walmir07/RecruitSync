@@ -18,6 +18,11 @@ const [descricao, setDescricao] = useState('');
 const [linkProva, setLinkProva] = useState('');
 const [dinamicaGrupo, setDinamicaGrupo] = useState('');
 const [textoEntrevista, setTextoEntrevista] = useState('');
+const [analiseCurricular, setAnaliseCurricular] = useState(false);
+
+const handleAnaliseCurricularChange = (event) => {
+    setAnaliseCurricular(event.target.value === 'true'); // Atualiza o estado com true ou false
+};
 
 const addProjeto = async (novoProjeto) => {
   const response = await fetch('/api/projetos', {
@@ -43,7 +48,11 @@ const handleSubmit = (e) => {
     linkProva,
     dinamicaGrupo,
     textoEntrevista,
+    analiseCurricular,
   };
+
+  console.log(novoProjeto);
+
   addProjeto(novoProjeto); // Adiciona novo projeto usando a API
   //onAddProjeto({ nomeProjeto, instituicao, criterios, vagas, descricao });
   setNomeProjeto('');
@@ -155,12 +164,26 @@ const [image, setImage] = useState(null);
                         <h4 className='titulos-etapas'>Análise curricular</h4>
                         <section className='opcoes-analise'>
                              <div>
-                                 <input type="radio" id="op1" name="drone" value="huey"/>
+                                 <input 
+                                    type="radio" 
+                                    id="op1"
+                                    name="analiseCurricular" 
+                                    value="true" 
+                                    checked={analiseCurricular === true}
+                                    onChange={handleAnaliseCurricularChange}
+                                />
                                 <label className='text-lab' for="op1">Atribuir análise</label>
                              </div>
                             
                             <div>
-                                 <input type="radio" id="op2" name="drone" value="dewey" />
+                                 <input 
+                                    type="radio" 
+                                    id="op2" 
+                                    name="analiseCurricular" 
+                                    value="false" 
+                                    checked={analiseCurricular === false}
+                                    onChange={handleAnaliseCurricularChange} 
+                                 />
                                  <label className='text-lab' for="op2">Não atribuir análise</label>
                             </div>
                         </section>
