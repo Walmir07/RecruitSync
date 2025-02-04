@@ -183,6 +183,7 @@ textarea{
     height: 50px;
     width: 150px;
     margin: 30px;
+    cursor: pointer;
 }
 
 /*Organização de imagens:*/
@@ -219,34 +220,4 @@ img {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-}
-
-/*Documento para entrevista de seleção:*/
-
-.documento-upload {
-    display: flex;
-    height: 40px;
-    width: 180px;
-    background-color: #f0f0f0;
-    background-image: url('https://via.placeholder.com/200?text=+');
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    cursor: pointer;
-    position: relative;
-    margin: 25px 0 20px 0;
-}
-  
-.documento-upload input[type="file"] {
-    display: none;
-  }
-  
-.add-documento {
-    font-size: 35px;
-    color: #b1b1b1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
 }

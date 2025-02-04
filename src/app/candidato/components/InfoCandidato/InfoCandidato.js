@@ -2,8 +2,13 @@ import './InfoCandidato.css'
 import { getCandidatosById } from '@/lib/candidato'
 import FotoTeste from './../../../../../public/sem-foto.png'
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default async function InfoCandidato({ id }){
+
+    /*function Aprovar(){
+        alert("`Aluno: ${candidato.nome} foi aprovado!`")
+    }*/
 
     const candidato = await getCandidatosById(id);
     console.log(candidato)
@@ -42,7 +47,7 @@ export default async function InfoCandidato({ id }){
 
             <section className='botoes'>
                     <button className='btn-reprovar'>Reprovar</button>
-                    <button className='btn-aprovar'>Aprovar</button>
+                   <Link href={"/acessar-inscritos"}><button className='btn-aprovar'>Aprovar</button></Link> 
             </section>
 
         </div>
