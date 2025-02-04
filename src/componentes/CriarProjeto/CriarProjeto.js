@@ -156,14 +156,33 @@ const [image, setImage] = useState(null);
                             </div>
                         </section>
                     </section>
+
                     <section className='etapa2'>
                         <h4 className='titulos-etapas'>Prova de seleção</h4>
-                        <input className='link-prova' type="text" placeholder="Link do formulário"></input>
+                        <input 
+                            className='link-prova' 
+                            type="text" 
+                            placeholder="Link do formulário"
+                        ></input>
                     </section>
+
                     <section className='etapa3'>
-                        <h4 className='titulos-etapas'>Entrevista de seleção</h4>
-                        <input className='texto-entrevista' type="text" placeholder="Informações entrevista"></input>
+                        <h4 className='titulos-etapas'>Dinâmica de grupo</h4>
+                        <input 
+                            className='dinamica-grupo'
+                            type="text" 
+                            placeholder="Dinâmica de grupo"
+                        ></input>
                     </section>
+
+                    <section className='etapa4'>
+                        <h4 className='titulos-etapas'>Entrevista de seleção</h4>
+                        <input 
+                            className='texto-entrevista' 
+                            type="text" 
+                            placeholder="Informações entrevista"></input>
+                    </section>
+
                 </section>
                 <section className='sect-botao'>
                    <button type="submit" className='criar-projeto'>Criar Projeto</button>

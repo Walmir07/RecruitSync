@@ -92,7 +92,7 @@ textarea{
     flex-direction: row;
 }
 
-.etapa1, .etapa2, .etapa3{
+.etapa1, .etapa2, .etapa3, .etapa4{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,6 +127,18 @@ textarea{
 }
 
 .link-prova{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 40px;
+    width: 180px;
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    margin: 25px 0 20px 0;
+}
+
+.dinamica-grupo{
     background-color: #FFFFFF;
     border-radius: 10px;
     border: 1px solid black;
