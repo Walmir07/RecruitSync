@@ -138,6 +138,18 @@ textarea{
     margin: 25px 0 20px 0;
 }
 
+.texto-entrevista{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 40px;
+    width: 180px;
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    margin: 25px 0 20px 0;
+}
+
 .entrevista{
     margin: 25px 0 20px 0;
 }

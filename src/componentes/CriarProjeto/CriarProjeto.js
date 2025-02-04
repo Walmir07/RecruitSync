@@ -64,19 +64,6 @@ const [image, setImage] = useState(null);
 };
 
 // Input de entrevista de seleção:
-
-const [documento, setDocumento] = useState(null);
-
-  const handleDocumentoUpload = (event) => {
-    const arquivo = event.target.files[0];
-    if (arquivo) {
-      const readerDoc = new FileReader();
-      readerDoc.onloadend = () => {
-        setDocumento(readerDoc.result);
-      };
-      readerDoc.readAsDataURL(arquivo);
-    }
-};
   
  return(
         <div className='container-criar'>
@@ -175,20 +162,7 @@ const [documento, setDocumento] = useState(null);
                     </section>
                     <section className='etapa3'>
                         <h4 className='titulos-etapas'>Entrevista de seleção</h4>
-
-
-                        <label htmlFor="documentoUpload" className="documento-upload">
-                        <input
-                            type="file"
-                            id="documentoUpload"
-                            name="documento"
-                            accept="accept=.png, .jpeg, .jpg, .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .txt"
-                            onChange={handleDocumentoUpload}
-                        />
-                        <span className="add-documento">{documento ? "" : "+"}</span>
-                        {documento && <img src={documento} alt="Arquivo adicionado" />}
-                        </label>
- 
+                        <input className='texto-entrevista' type="text" placeholder="Informações entrevista"></input>
                     </section>
                 </section>
                 <section className='sect-botao'>
