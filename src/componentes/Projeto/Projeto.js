@@ -14,7 +14,7 @@ export default function Projeto({id, logo, nome, coordenador, instituicao, descr
     return(
         <div className='contProjeto'>
             <section className="sessao1">
-                <Image width={120} height={120} className='logo-do-projeto' src={logo} alt="Logo do projeto"></Image>
+                <img width={120} height={120} className='logo-do-projeto' src={logo} alt="Logo do projeto"></img>
             </section>
             <section className="sessao2">
                 <p><strong>Nome:</strong> {nome}</p> 

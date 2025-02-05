@@ -35,15 +35,17 @@ export default function GerenciarProjeto(){
 
               {projetos.map(p => (
               <Projeto
+                    key={p.id_projeto}
                     id={p.id_projeto}
-                    /*logo={`/${p.logo}`}*/
-                    logo={p.logo ? `/${p.logo}` : '/img-reuniao1.jpeg'}
+                    /*logo={p.logo ? `/${p.logo}` : '/img-reuniao1.jpeg'}*/
+                    logo={p.logo ? p.logo : '/img-reuniao1.jpeg'}
                     nome={(p.nome)} 
                     coordenador={p.coordenador} 
                     instituicao={p.instituicao} 
                     descricao={p.descricao} 
                     situacao={p.situacao}
                     onExclude={() => setProjetos([...projetos])}
+                    /*onExclude={() => setProjetos(projetos.filter(proj => proj.id_projeto !== p.id_projeto))}*/
                     >
               </Projeto>))}
 

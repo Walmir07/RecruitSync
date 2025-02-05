@@ -193,7 +193,8 @@ textarea{
     width: 150px;
     height: 150px;
     background-color: #f0f0f0;
-    background-image: url('https://via.placeholder.com/200?text=+');
+    /*background-image: url('https://via.placeholder.com/200?text=+');*/
+    /*background-image: url('https://placehold.co/150x150?text=%2B');*/
     background-size: cover;
     background-position: center;
     border-radius: 8px;

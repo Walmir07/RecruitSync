@@ -19,9 +19,21 @@ const [linkProva, setLinkProva] = useState('');
 const [dinamicaGrupo, setDinamicaGrupo] = useState('');
 const [textoEntrevista, setTextoEntrevista] = useState('');
 const [analiseCurricular, setAnaliseCurricular] = useState(false);
+const [image, setImage] = useState(null);
 
 const handleAnaliseCurricularChange = (event) => {
     setAnaliseCurricular(event.target.value === 'true'); // Atualiza o estado com true ou false
+};
+
+const handleImageUpload = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImage(reader.result); // Atualiza o estado com a imagem carregada
+      };
+      reader.readAsDataURL(file); // Lê o arquivo como uma URL de dados
+    }
 };
 
 const addProjeto = async (novoProjeto) => {
@@ -44,7 +56,7 @@ const handleSubmit = (e) => {
     situacao: "TESTE",
     coordenador: "TESTE.",
     instituicao,
-    logo: "Teste...",
+    logo: image,
     linkProva,
     dinamicaGrupo,
     textoEntrevista,
@@ -64,24 +76,10 @@ const handleSubmit = (e) => {
   setLinkProva('');
   setDinamicaGrupo('');
   setTextoEntrevista('');
+  setAnaliseCurricular(null);
+  setImage(null);
 }
 
-// Organização de input de imagem:
-
-const [image, setImage] = useState(null);
-
-  const handleImageUpload = (event) => {
-    const file = event.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setImage(reader.result); // Atualiza o estado com a imagem carregada
-      };
-      reader.readAsDataURL(file); // Lê o arquivo como uma URL de dados
-    }
-};
-
-// Input de entrevista de seleção:
   
  return(
         <div className='container-criar'>
@@ -111,6 +109,8 @@ const [image, setImage] = useState(null);
 
                         <input 
                             required
+                            id='nomeProjeto'
+                            name='nomeProjeto'
                             type='text'
                             className='inputs'
                             placeholder='Nome do projeto'
@@ -120,6 +120,8 @@ const [image, setImage] = useState(null);
 
                         <input 
                             required
+                            id='instituicao'
+                            name='instituicao'
                             type='text' 
                             className='inputs' 
                             placeholder='Instituição'
@@ -128,7 +130,9 @@ const [image, setImage] = useState(null);
                         ></input>
 
                         <input
-                            required 
+                            required
+                            id='criterios'
+                            name='criterios' 
                             type='text' 
                             className='inputs' 
                             placeholder='Critérios'
@@ -138,6 +142,8 @@ const [image, setImage] = useState(null);
 
                         <input
                             required
+                            id='vagas'
+                            name='vagas'
                             type='text' 
                             className='inputs' 
                             placeholder='Vagas'
@@ -150,7 +156,9 @@ const [image, setImage] = useState(null);
                     <section className='sect-desc'>
 
                         <textarea
-                            required 
+                            required
+                            id='descricao'
+                            name='descricao' 
                             className='textarea' 
                             placeholder='Descrição do projeto'
                             value={descricao}
@@ -172,7 +180,7 @@ const [image, setImage] = useState(null);
                                     checked={analiseCurricular === true}
                                     onChange={handleAnaliseCurricularChange}
                                 />
-                                <label className='text-lab' for="op1">Atribuir análise</label>
+                                <label className='text-lab' htmlFor="op1">Atribuir análise</label>
                              </div>
                             
                             <div>
@@ -184,14 +192,16 @@ const [image, setImage] = useState(null);
                                     checked={analiseCurricular === false}
                                     onChange={handleAnaliseCurricularChange} 
                                  />
-                                 <label className='text-lab' for="op2">Não atribuir análise</label>
+                                 <label className='text-lab' htmlFor="op2">Não atribuir análise</label>
                             </div>
                         </section>
                     </section>
 
                     <section className='etapa2'>
                         <h4 className='titulos-etapas'>Prova de seleção</h4>
-                        <input 
+                        <input
+                            id='linkProva'
+                            name='linkProva'
                             className='link-prova' 
                             type="text" 
                             placeholder="Link do formulário"
@@ -202,7 +212,9 @@ const [image, setImage] = useState(null);
 
                     <section className='etapa3'>
                         <h4 className='titulos-etapas'>Dinâmica de grupo</h4>
-                        <input 
+                        <input
+                            id='dinamicaGrupo'
+                            name='dinamicaGrupo'
                             className='dinamica-grupo'
                             type="text" 
                             placeholder="Dinâmica de grupo"
@@ -214,6 +226,8 @@ const [image, setImage] = useState(null);
                     <section className='etapa4'>
                         <h4 className='titulos-etapas'>Entrevista de seleção</h4>
                         <input 
+                            id='textoEntrevista'
+                            name='textoEntrevista'
                             className='texto-entrevista' 
                             type="text" 
                             placeholder="Informações entrevista"
