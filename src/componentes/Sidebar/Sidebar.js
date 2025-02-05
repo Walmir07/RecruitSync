@@ -22,7 +22,7 @@ function Sidebar({ active }) {
   }
 
   return (
-    <main className='container' sidebar={active}>
+    <div className='container' sidebar={active}>
       <div><Image src={Close} className='close' onClick={closeSidebar} alt='Fechar'></Image></div>
 
       <div className='conteudo'>
@@ -33,7 +33,7 @@ function Sidebar({ active }) {
         <SidebarItem Icone={User} Texto='Perfil' Caminho={'/perfil/1'}/*{`/perfil/${dados.id}`}*/></SidebarItem>{/*Dados manuais*/}
         <SidebarItem Icone={Bell} Texto='Notificações' Caminho='/notificacoes'></SidebarItem>
       </div>
-    </main>
+    </div>
   )
 }
 
