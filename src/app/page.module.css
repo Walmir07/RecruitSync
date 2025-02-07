@@ -9,8 +9,44 @@
 
 .titulo{
   font-size: 60px;
-  margin: 100px;
+  margin: 80px;
 }
+
+/*Responsividade:*/
+
+  /*Estilos gerais para desktops grandes (acima de 1440px) */
+ 
+  /* Estilos para desktops médios (telas de 1280px a 1440px) */
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    .titulo {
+      font-size: 58px;
+      margin: 80px;
+    }
+  }
+  
+  /* Estilos para tablets grandes e laptops pequenos (1024px a 1280px) */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .titulo {
+      font-size: 56px;
+      margin: 70px;
+    }
+  }
+  
+    /* Estilos para tablets (768px a 1024px) */
+    @media (min-width: 768px) and (max-width: 992px) {
+      .titulo {
+        font-size: 54px;
+        margin: 60px;
+      }
+    }
+  
+  /* Estilos para smartphones pequenos (telas abaixo de 768px) */
+  @media (max-width: 767px) {
+    .titulo {
+      font-size: 52px;
+      margin: 50px;
+    }
+  }
 
 .description {
   display: inherit;
