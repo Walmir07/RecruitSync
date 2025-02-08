@@ -110,3 +110,234 @@ p{
     order: 2;
     flex-grow: 1
 }
+
+.sect-btn {
+    display: flex;
+}
+
+/* Estilos para desktops médios (telas de 1280px a 1440px) */
+@media (min-width: 1200px) and (max-width: 1439px) {
+    p{
+        font-size: 18px;
+    }
+}
+    
+/* Estilos para tablets grandes e laptops pequenos (1024px a 1280px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    p{
+        font-size: 17px;
+    }
+    .logo-do-projeto{
+        height: 105px;
+        width: 105px;
+    }
+    .descricao-projeto{
+        font-size: 14px;
+    }
+}
+    
+/* Estilos para tablets (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    p{
+        font-size: 13px;
+    }
+    .logo-do-projeto{
+        height: 105px;
+        width: 105px;
+    }
+    .descricao-projeto{
+        font-size: 13px;
+    }
+    .situacao{
+        height: 35px;
+        width: 160px;
+        font-size: 14px;
+    }
+    
+    .lnk-acessar-inscritos{
+        height: 35px;
+        width: 160px;
+        font-size: 14px;
+    }
+    
+    .btn-excluir{
+        height: 25px;
+        width: 65px;
+        font-size: 15px;
+    }
+}
+    
+/* Estilos para smartphones pequenos*/
+@media (min-width: 600px) and (max-width: 767px) {
+    .contProjeto{
+        height: 550px;
+        width: 100%;
+        flex-direction: column;
+        background-color: #4A5C6A;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 0;
+    }
+
+    .sessao1{
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .sessao2{
+        justify-content: center;
+        align-items: flex-start;
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .sessao3{
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .sessao4{
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logo-do-projeto{
+        height: 130px;
+        width: 130px;
+        margin: 25px 0 0 20px;
+    }
+
+    p{
+        font-size: 18px;
+        text-align: center;
+        margin: 3px;
+    }
+
+    hr{
+        display: none;
+    }
+    .descricao-projeto{
+        font-size: 17px;
+    }
+
+    .sect-btn{
+        display: flex;
+        width: 80%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .situacao{
+        height: 35px;
+        width: 80%;
+        font-size: 14px;
+    }
+    
+    .lnk-acessar-inscritos{
+        height: 35px;
+        width: 80%;
+        font-size: 14px;
+    }
+    
+    .btn-excluir{
+        height: 35px;
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+/*Pequenas telas*/
+@media (max-width: 599px) {
+    .contProjeto{
+        height: 550px;
+        width: 100%;
+        flex-direction: column;
+        background-color: #4A5C6A;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 0;
+    }
+
+    .sessao1{
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .sessao2{
+        justify-content: center;
+        align-items: flex-start;
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .sessao3{
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .sessao4{
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logo-do-projeto{
+        height: 130px;
+        width: 130px;
+        margin: 25px 0 0 20px;
+    }
+
+    p{
+        font-size: 18px;
+        text-align: center;
+        margin: 3px;
+    }
+
+    hr{
+        display: none;
+    }
+    .descricao-projeto{
+        font-size: 17px;
+    }
+
+    .sect-btn{
+        display: flex;
+        width: 80%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .situacao{
+        height: 35px;
+        width: 80%;
+        font-size: 14px;
+    }
+    
+    .lnk-acessar-inscritos{
+        height: 35px;
+        width: 80%;
+        font-size: 14px;
+    }
+    
+    .btn-excluir{
+        height: 35px;
+        width: 100%;
+        font-size: 15px;
+    }
+}
