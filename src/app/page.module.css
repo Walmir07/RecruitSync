@@ -12,41 +12,70 @@
   margin: 80px;
 }
 
-/*Responsividade:*/
+.descricao_rs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  margin: 80px;
+}
 
-  /*Estilos gerais para desktops grandes (acima de 1440px) */
+.perguntas{
+  display: flex;
+  padding: 30px;
+  margin: 100px;
+}
+
+.pergunta{
+  font-size: 20px;
+}
+
+.destaque{
+  font-size: 23px;
+  margin-right: 5px;
+}
+
+
+/*Responsividade:*/
  
-  /* Estilos para desktops médios (telas de 1280px a 1440px) */
-  @media (min-width: 1200px) and (max-width: 1439px) {
-    .titulo {
-      font-size: 58px;
-      margin: 80px;
-    }
-  }
+/*Computadores*/
+@media (min-width: 1200px) and (max-width: 1439px) {
+  /*Padrão*/
+}
   
-  /* Estilos para tablets grandes e laptops pequenos (1024px a 1280px) */
-  @media (min-width: 992px) and (max-width: 1200px) {
-    .titulo {
-      font-size: 56px;
-      margin: 60px;
-    }
+/*Laptops*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .titulo {
+    font-size: 56px;
+    margin: 60px;
   }
+}
   
-    /* Estilos para tablets (768px a 1024px) */
-    @media (min-width: 768px) and (max-width: 992px) {
-      .titulo {
-        font-size: 54px;
-        margin: 60px;
-      }
-    }
-  
-  /* Estilos para smartphones pequenos (telas abaixo de 768px) */
-  @media (max-width: 767px) {
-    .titulo {
-      font-size: 52px;
-      margin: 50px;
-    }
+/*Tablets*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .titulo {
+    font-size: 54px;
+    margin: 60px;
   }
+}
+  
+/*Celulares grandes*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .titulo {
+    font-size: 52px;
+    margin: 50px;
+  }
+}
+
+/*Celulares pequenos*/
+@media (max-width: 575px) {
+  .titulo {
+    font-size: 52px;
+    margin: 50px;
+  }
+}
 
 .description {
   display: inherit;
