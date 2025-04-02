@@ -47,35 +47,24 @@
   
 /*Laptops*/
 @media (min-width: 992px) and (max-width: 1199px) {
-  .titulo {
-    font-size: 56px;
-    margin: 60px;
-  }
+  
 }
   
 /*Tablets*/
 @media (min-width: 768px) and (max-width: 991px) {
-  .titulo {
-    font-size: 54px;
-    margin: 60px;
-  }
+  
 }
   
 /*Celulares grandes*/
 @media (min-width: 576px) and (max-width: 767px) {
-  .titulo {
-    font-size: 52px;
-    margin: 50px;
-  }
+  
 }
 
 /*Celulares pequenos*/
 @media (max-width: 575px) {
-  .titulo {
-    font-size: 52px;
-    margin: 50px;
-  }
+  
 }
+
 
 .description {
   display: inherit;

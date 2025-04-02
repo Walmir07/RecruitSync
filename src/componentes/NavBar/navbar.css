@@ -7,12 +7,16 @@
     flex-direction: row;
     align-items: center;
     border-bottom: 2px solid rgb(241, 224, 224);
-  }
+}
 
 .logo{
-    margin: 0;
-    height: 70px;
-    width: 70px;
+    margin: 10px;
+    height: 55px;
+    width: 55px;
+}
+
+.titulo-nav{
+    
 }
 
 .links{
@@ -30,4 +34,63 @@ ul, li {
     list-style: none;
     display: flex;
     color: gray;
+}
+
+.login-regist{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: end;
+    align-items: center;
+}
+
+.login, .signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 90;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+
+/*Computadores*/
+@media (min-width: 1200px) and (max-width: 1439px) {
+/*Padrão*/
+}
+
+/*Laptops*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*Tablets*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*Celulares grandes*/
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/*Celulares pequenos*/
+@media (max-width: 575px) {
+    .navbar{
+        padding: 0;
+    }
+    .titulo-nav{
+        font-size: 30px;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    ul, li {
+        display: none;
+    }
 }

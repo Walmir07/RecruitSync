@@ -1,8 +1,7 @@
 import './navbar.css'
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo from '../../../public/logo-rs.jpeg'
-import LoginRegist from '../LoginRegist/LoginRegist';
+import Logo from '../../../public/logo-oficial-rs.png'
 import ModalContatos from '../ModalContatos/ModalContatos'
 
 export default function NavBar() {
@@ -16,15 +15,20 @@ export default function NavBar() {
            alt="Logo da aplicação"
         >
         </Image>
-        <h1>RecruitSync</h1>
-      <div className="links">
+
+        <h1 className='titulo-nav'>RecruitSync</h1>
+
+        <div className="links">
          <ul>
            <li><Link href="/app">Home</Link></li>
            <li><ModalContatos></ModalContatos></li>
          </ul>
         </div>
          
-        <LoginRegist></LoginRegist>
+        <div className='login-regist'>
+          <Link className='login' href="/login">Log in</Link>
+          <Link className='signup' href="/cadastro">Sign up</Link>
+        </div>
         
       </main>
     );
