@@ -16,7 +16,7 @@
 }
 
 .titulo-nav{
-    
+    font-size: 30px;
 }
 
 .links{
@@ -50,7 +50,7 @@ ul, li {
     align-items: center;
     justify-content: center;
     height: 40px;
-    width: 90;
+    width: 90px;
     padding: 10px;
     margin: 10px;
     border: 2px solid white;
@@ -81,16 +81,22 @@ ul, li {
 /*Celulares pequenos*/
 @media (max-width: 575px) {
     .navbar{
+        height: 65px;
         padding: 0;
     }
     .titulo-nav{
-        font-size: 30px;
+        font-size: 22px;
     }
     .logo{
-        width: 50px;
-        height: 50px;
+        width: 47px;
+        height: 47px;
     }
     ul, li {
         display: none;
+    }
+    .login, .signup {
+        width: 80px;
+        height: 35px;
+        font-size: 15px;
     }
 }
