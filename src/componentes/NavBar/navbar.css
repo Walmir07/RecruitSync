@@ -123,17 +123,20 @@ ul, li {
      height: 70px;
   }
   .titulo-nav{
-     display: none;
+     font-size: 20px;
   }
   .logo{
-     width: 50px;
-     height: 50px;
+     width: 48px;
+     height: 48px;
   }
   ul, li {
      display: none;
   }
   .login-regist{
     gap: 1px;
+  }
+  .login{
+    display: none;
   }
   .login, .signup {
      width: 75px;

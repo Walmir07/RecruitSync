@@ -17,6 +17,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-size: 25px;
   color: rgb(255, 255, 255);
   margin: 80px;
@@ -24,6 +25,9 @@
 
 .perguntas{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 30px;
   margin: 100px;
 }
@@ -75,8 +79,6 @@
     }
     .descricao_rs{
         font-size: 22px;
-        word-wrap: break-word;
-        white-space: normal;
         text-align: justify;
     }    
     .destaque{
@@ -103,14 +105,16 @@
       margin-top: 40%;
     }
     .descricao_rs{
-        font-size: 20px;
-        word-wrap: break-word;
-        white-space: normal;
-        text-align: justify;
+      font-size: 20px;
+      margin: 30% 10% 30% 10%;
     }    
     .destaque{
-      font-size: 20px;
+      font-size: 19px;
       margin-right: 5px;
+    }
+    .perguntas{
+      padding: 0;
+      margin: 20% 10% 30% 10%;
     }
     .pergunta{
       font-size: 18px;
