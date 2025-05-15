@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     height: 70px;
-    padding: 0 30px 2px 0;
+    padding: 0 2px 2px 2px;
     background-color: rgb(10, 11, 14);
     flex-direction: row;
     align-items: center;
@@ -57,46 +57,62 @@ ul, li {
     border-radius: 10px;
 }
 
+/*    Responsividade     */
 
-/*Computadores*/
-@media (min-width: 1200px) and (max-width: 1439px) {
-/*Padrão*/
+/* Notebooks e telas médias */
+@media (max-width: 1199px) {
+    .header{
+      height: 80px;
+      width: 100%;
+    }
+}
+  
+/* Tablets */
+@media (max-width: 991px) {
+  .header{
+    height: 100px;
+  }
+  .links{
+    font-size: 23px;
+  }
+  .logo-wl {
+    height: 80px;
+    width: 120px;
+  }
 }
 
-/*Laptops*/
-@media (min-width: 992px) and (max-width: 1199px) {
-
+/* Celulares grandes */
+@media (max-width: 767px) {
+  .header{
+    height: 120px;
+  }
+  .links{
+    font-size: 25px;
+  }
+  .logo-wl {
+    height: 90px;
+    width: 130px;
+  }
 }
 
-/*Tablets*/
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/*Celulares grandes*/
-@media (min-width: 576px) and (max-width: 767px) {
-
-}
-
-/*Celulares pequenos*/
+/* Celulares pequenos */
 @media (max-width: 575px) {
-    .navbar{
-        height: 65px;
-        padding: 0;
-    }
-    .titulo-nav{
-        font-size: 22px;
-    }
-    .logo{
-        width: 47px;
-        height: 47px;
-    }
-    ul, li {
-        display: none;
-    }
-    .login, .signup {
-        width: 80px;
-        height: 35px;
-        font-size: 15px;
-    }
+  .navbar{
+     height: 80px;
+  }
+  .titulo-nav{
+     font-size: 25px;
+  }
+  .logo{
+     width: 48px;
+     height: 48px;
+  }
+  ul, li {
+     display: none;
+  }
+  .login, .signup {
+     width: 85px;
+     height: 40px;
+     font-size: 16px;
+  }
 }
