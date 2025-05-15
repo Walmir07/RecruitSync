@@ -11,9 +11,7 @@ export default function Home() {
       <h1 className={styles.titulo}>RecruitSync</h1>
 
       <div className={styles.descricao_rs}>
-        <p>"Explore oportunidades educacionais e inscreva-se para se tornar um bolsista! </p>
-        <p>Descubra oportunidades de desenvolvimento acadêmico e profissional sob medida</p>
-        <p>para você. Seja parte da próxima geração de líderes. Inscreva-se agora!"</p>
+        <p>"Explore oportunidades educacionais e inscreva-se para se tornar um bolsista! Descubra oportunidades de desenvolvimento acadêmico e profissional sob medida para você. Seja parte da próxima geração de líderes. Inscreva-se agora!"</p>
       </div>
 
       <div className={styles.perguntas}>
