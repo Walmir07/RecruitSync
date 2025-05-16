@@ -38,12 +38,8 @@ export default function Cadastro(){
                 <input type='password' className={styles.input2} placeholder='Digite sua senha'></input>
          </section>
 
-         <section className={styles.espaco}>
-              
-         </section>
-
-         <section className='inputs'>
-              <Link href='/login'><button className={styles.criar} type='submit'>Criar conta</button></Link>
+         <section className={styles.inputs}>
+              <Link className={styles.inputs} href='/login'><button className={styles.criar} type='submit'>Criar conta</button></Link>
          </section>
 
          <section className={styles.rows}>
