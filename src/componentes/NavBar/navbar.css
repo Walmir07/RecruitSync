@@ -99,6 +99,8 @@ ul, li {
 @media (max-width: 575px) {
   .navbar{
      height: 80px;
+     position: sticky;
+     top: 0;
   }
   .titulo-nav{
      font-size: 25px;
@@ -120,14 +122,16 @@ ul, li {
 /* Smartphones */
 @media (max-width: 525px) {
   .navbar{
-     height: 70px;
+     height: 55px;
+     position: sticky;
+     top: 0;
   }
   .titulo-nav{
-     font-size: 20px;
+     font-size: 18px;
   }
   .logo{
-     width: 48px;
-     height: 48px;
+     width: 46px;
+     height: 46px;
   }
   ul, li {
      display: none;
@@ -139,8 +143,8 @@ ul, li {
     display: none;
   }
   .login, .signup {
-     width: 75px;
+     width: 70px;
      height: 35px;
-     font-size: 13px;
+     font-size: 12px;
   }
 }
