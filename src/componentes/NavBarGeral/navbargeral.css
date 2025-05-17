@@ -32,3 +32,54 @@ ul, li {
     display: flex;
     color: gray;
 }
+
+/*    Responsividade     */
+
+/* Notebooks e telas médias */
+@media (max-width: 1199px) {
+    
+}
+  
+/* Tablets */
+@media (max-width: 991px) {
+  
+}
+
+/* Celulares grandes */
+@media (max-width: 767px) {
+  
+}
+
+/* Celulares pequenos */
+@media (max-width: 575px) {
+  
+}
+
+/* Smartphones */
+@media (max-width: 525px) {
+  .navbargeral{
+     height: 55px;
+  }
+  .titulo-header{
+     font-size: 18px;
+  }
+  .bars{
+     width: 25px;
+     height: 25px;
+     margin: 0 10px 0 15px;
+  }
+  ul, li {
+     display: none;
+  }
+  .login-regist{
+    gap: 1px;
+  }
+  .login{
+    display: none;
+  }
+  .login, .signup {
+     width: 70px;
+     height: 35px;
+     font-size: 12px;
+  }
+}

@@ -24,7 +24,7 @@ export default function NavBarGeral() {
         >
         </Image>
         {sidebar && <Sidebar active={setSidebar}></Sidebar>}
-        <h1>RecruitSync</h1>
+        <h1 className='titulo-header'>RecruitSync</h1>
       </main>
     );
   }
