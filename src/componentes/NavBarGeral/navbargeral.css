@@ -68,18 +68,5 @@ ul, li {
      height: 25px;
      margin: 0 10px 0 15px;
   }
-  ul, li {
-     display: none;
-  }
-  .login-regist{
-    gap: 1px;
-  }
-  .login{
-    display: none;
-  }
-  .login, .signup {
-     width: 70px;
-     height: 35px;
-     font-size: 12px;
-  }
+  
 }

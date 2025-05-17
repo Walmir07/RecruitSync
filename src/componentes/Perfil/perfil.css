@@ -45,3 +45,40 @@
     position: relative;
     z-index: 1; 
   }
+
+/*    Responsividade     */
+
+/* Notebooks e telas médias */
+@media (max-width: 1199px) {
+    
+}
+  
+/* Tablets */
+@media (max-width: 991px) {
+  
+}
+
+/* Celulares grandes */
+@media (max-width: 767px) {
+  
+}
+
+/* Celulares pequenos */
+@media (max-width: 575px) {
+  
+}
+
+/* Smartphones */
+@media (max-width: 525px) {
+  .imagem{
+    width: 65px;
+    height: 65px;
+  }
+  .retangulo{
+    width: 70%;
+    height: 35px;
+  }
+  .nome-usuario{
+    font-size: 18px;
+  }
+}

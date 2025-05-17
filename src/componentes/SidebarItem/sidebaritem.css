@@ -36,3 +36,40 @@
    border-radius: 10px;
    height: 100%;
 }
+
+/*    Responsividade     */
+
+/* Notebooks e telas médias */
+@media (max-width: 1199px) {
+    
+}
+  
+/* Tablets */
+@media (max-width: 991px) {
+  
+}
+
+/* Celulares grandes */
+@media (max-width: 767px) {
+  
+}
+
+/* Celulares pequenos */
+@media (max-width: 575px) {
+  
+}
+
+/* Smartphones */
+@media (max-width: 525px) {
+  .containerIt{
+    font-size: 15px;
+    padding: 0;  
+    margin: 0 10px 10px 0;
+    height: 43px;
+  }
+  .icones{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+  } 
+}

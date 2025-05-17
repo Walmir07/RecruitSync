@@ -31,7 +31,7 @@
   background-color: #030D31;
   margin: 0;
   height: 100%;
-  padding: 0 0 0 20px;
+  padding: 0 15px 0 20px;
 }
 
 @keyframes showSidebar{
@@ -51,42 +51,40 @@
     width: 37px;
     margin: 15px 10px 0 18px;
     cursor: pointer;
+}
+
+/*    Responsividade     */
+
+/* Notebooks e telas médias */
+@media (max-width: 1199px) {
+    
+}
+  
+/* Tablets */
+@media (max-width: 991px) {
+  
+}
+
+/* Celulares grandes */
+@media (max-width: 767px) {
+  
+}
+
+/* Celulares pequenos */
+@media (max-width: 575px) {
+  
+}
+
+/* Smartphones */
+@media (max-width: 525px) {
+  .container{
+     width: 60%;
   }
-  
-  /*.containerSB{
-    background-color: #0A5517;
-    position: fixed;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    width: 300px;
-    left: ${props => props.sidebar ? '0' : '-100%'};
-    animation: showSidebar .4s;
-  
-    > svg {
-      position: fixed;
-      color: white;
-      width: 30px;
-      height: 30px;
-      margin-top: 32px;
-      margin-left: 32px;
-      cursor: pointer;
-    }
-  
-    @keyframes showSidebar{
-      from {
-        opacity: 0;
-        width: 0;
-      }
-      to {
-        opacity: 1;
-        width: 300px;
-      }
-    }          
+  .close{
+     width: 25px;
+     height: 25px;
   }
-  
-  .conteudoSB{
-    margin-top:100px;
+  .conteudo{
+    padding: 0 10px 0 20px;
   }
-  
-  */
+}

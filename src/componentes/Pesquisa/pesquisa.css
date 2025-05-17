@@ -7,7 +7,7 @@
     margin: 35px;
     margin-right: 0;
     margin-left: 0;
-  }
+}
   
 .input{
     height: 100%;
@@ -28,4 +28,53 @@
     width: 25px;
     color: white;
     position: absolute;
-  }
+}
+
+
+/*    Responsividade     */
+
+/* Notebooks e telas médias */
+@media (max-width: 1199px) {
+    
+}
+  
+/* Tablets */
+@media (max-width: 991px) {
+  
+}
+
+/* Celulares grandes */
+@media (max-width: 767px) {
+  
+}
+
+/* Celulares pequenos */
+@media (max-width: 575px) {
+  
+}
+
+/* Smartphones */
+@media (max-width: 525px) {
+  .pesquisa{
+    height: 30px;
+    width: 100%;
+    padding: 0;
+    margin: 35px;
+    margin-right: 0;
+    margin-left: 0;
+}
+  
+.input{
+    border-bottom: 2px solid white;
+    font-size: 13px;
+    padding-left: 30px;
+}
+  
+.lupa{
+    height: 22px;
+    width: 22px;
+    color: white;
+    position: absolute;
+}
+
+}

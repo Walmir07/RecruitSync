@@ -9,7 +9,7 @@ function Perfil({ fotoPerfil, nomeUsuario}){
       <Image src={fotoPerfil || SemPerfil} className='imagem' alt='Foto de perfil'>
       </Image>
       <div className='retangulo'>
-        <h2>{nomeUsuario} Walmir Lima</h2>
+        <h2 className='nome-usuario'>{nomeUsuario} Walmir Lima</h2>
       </div>
     </div>
   )
