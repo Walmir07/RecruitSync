@@ -44,7 +44,7 @@
     color: white;
     position: absolute;
     margin: 0 0 0 15px;
-  }
+}
 
 .projetos-criados{
     display: grid;
@@ -53,9 +53,64 @@
     background-color: #30363D;
     grid-gap: 25px;
     height: 75vh;
-    padding: 20px 30px 20px 30px;
+    padding: 20px;
     overflow-y: scroll;
     scroll-behavior:auto;
     overflow: auto;
     grid-auto-rows: min-content;
+}
+
+/*    Responsividade     */
+
+/* Notebooks e telas médias */
+@media (max-width: 1199px) {
+    
+}
+  
+/* Tablets */
+@media (max-width: 991px) {
+  
+}
+
+/* Celulares grandes */
+@media (max-width: 767px) {
+  
+}
+
+/* Celulares pequenos */
+@media (max-width: 575px) {
+  
+}
+
+/* Smartphones */
+@media (max-width: 525px) {
+  .pesquisar{
+    height: 35px;
+  }
+  .pesquisarProjeto{
+    height: 100%;
+    margin: 0 5px 0 0;
+    margin-left: 0;
+    border-radius: 10px;
+    padding-left: 40px;
+    font-size: 13px;
+  }
+  .criarNovo{
+    height: 100%;
+    font-size: 13px;
+    width: 120px;
+    margin: 0 0 0 5px;
+  }
+
+  .Lupa{
+      height: 20px;
+      width: 20px;
+      color: white;
+      position: absolute;
+      margin: 0 0 0 10px;
+  }
+  .projetos-criados{
+    padding: 10px;
+    overflow-y: scroll;
+  }
 }
