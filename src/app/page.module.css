@@ -46,21 +46,91 @@
 
 /* Notebooks e telas médias */
 @media (max-width: 1199px) {
-
+  .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 0 30% 0;
+      height: 100dvh;
+      background: #000000;
+    }
+    .titulo{
+      font-size: 55px;
+      margin-top: 20%;
+    }
+    .descricao_rs{
+      font-size: 22px;
+      margin: 10% 5% 20% 5%;
+    }
+    .perguntas{
+      padding: 0;
+      margin: 10% 20% 10% 20%;
+    }    
+    .destaque{
+      font-size: 20px;
+      margin-right: 5px;
+    }
+    .pergunta{
+      font-size: 20px;
+    } 
 }
   
 /* Tablets */
 @media (max-width: 991px) {
-  .container-home{
-    padding: 50% 0 50% 0;
-  }  
+  .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 0 30% 0;
+      height: 100dvh;
+      background: #000000;
+    }
+    .titulo{
+      font-size: 50px;
+      margin-top: 20%;
+    }
+    .descricao_rs{
+      font-size: 22px;
+      margin: 10% 5% 20% 5%;
+    }
+    .perguntas{
+      padding: 0;
+      margin: 10% 20% 10% 20%;
+    }    
+    .destaque{
+      font-size: 20px;
+      margin-right: 5px;
+    }
+    .pergunta{
+      font-size: 20px;
+    } 
 }
 
 /* Celulares grandes */
 @media (max-width: 767px) {
-  .container-home{
-    padding: 50% 0 50% 0;
-  }    
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 0 30% 0;
+      height: 100dvh;
+      background: #000000;
+    }
+    .titulo{
+      font-size: 45px;
+      margin-top: 30%;
+    }
+    .descricao_rs{
+      font-size: 22px;
+      margin: 20% 10% 30% 10%;
+    }    
+    .destaque{
+      font-size: 20px;
+      margin-right: 5px;
+    }
+    .pergunta{
+      font-size: 20px;
+    }   
 }
 
 /* Celulares pequenos */
@@ -78,8 +148,8 @@
       margin-top: 30%;
     }
     .descricao_rs{
-        font-size: 22px;
-        text-align: justify;
+      font-size: 22px;
+      margin: 20% 10% 30% 10%;
     }    
     .destaque{
       font-size: 20px;
