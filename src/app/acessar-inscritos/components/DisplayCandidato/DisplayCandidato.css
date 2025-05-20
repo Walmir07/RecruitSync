@@ -19,3 +19,47 @@
     border-radius: 50%;
     margin: 10px 25px 10px 10px;
 }
+
+/*    Responsividade     */
+
+/* Notebooks e telas médias */
+@media (max-width: 1199px) {
+    
+}
+  
+/* Tablets */
+@media (max-width: 991px) {
+  
+}
+
+/* Celulares grandes */
+@media (max-width: 767px) {
+  
+}
+
+/* Celulares pequenos */
+@media (max-width: 575px) {
+  
+}
+
+/* Smartphones */
+@media (max-width: 525px) {
+  .display-test{
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    color: Black;
+    padding: 20px;
+}
+
+.nome-candidato{
+    font-size: 13px;
+}
+
+.foto-candidato{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 10px 15px 10px 0;
+}
+}

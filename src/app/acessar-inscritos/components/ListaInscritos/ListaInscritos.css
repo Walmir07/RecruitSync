@@ -12,3 +12,46 @@
     scroll-behavior:auto;
     overflow: auto;
 }
+
+p{
+    font-size: 15px;
+}
+
+/*    Responsividade     */
+
+/* Notebooks e telas médias */
+@media (max-width: 1199px) {
+    
+}
+  
+/* Tablets */
+@media (max-width: 991px) {
+  
+}
+
+/* Celulares grandes */
+@media (max-width: 767px) {
+  
+}
+
+/* Celulares pequenos */
+@media (max-width: 575px) {
+  
+}
+
+/* Smartphones */
+@media (max-width: 525px) {
+  .lista-inscritos{
+    gap: 5px;
+  }
+
+  .titulo{
+    margin: 20px;
+    font-size: 18px;
+  }
+
+  p{
+    font-size: 12px;
+  }
+
+}

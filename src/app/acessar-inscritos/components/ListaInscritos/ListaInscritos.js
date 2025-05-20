@@ -1,12 +1,12 @@
-import './ListaInscritos.css'
-import DisplayCandidato from '../DisplayCandidato/DisplayCandidato'
-import FotoTeste from './../../../../../public/sem-foto.png'
-import db from '@/lib/db'
+import './ListaInscritos.css';
+import DisplayCandidato from '../DisplayCandidato/DisplayCandidato';
+import FotoTeste from './../../../../../public/sem-foto.png';
+import db from '@/lib/db';
 
 export default async function ListaInscritos(){
 
     const candidatos = await db.query("select * from candidato");
-    const quantCandidato = await db.query("select count(*) from candidato")
+    const quantCandidato = await db.query("select count(*) from candidato");
 
 
     return(
