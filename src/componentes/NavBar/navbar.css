@@ -7,6 +7,8 @@
     flex-direction: row;
     align-items: center;
     border-bottom: 2px solid rgb(241, 224, 224);
+    position: sticky;
+    top: 0;
 }
 
 .logo{
@@ -61,37 +63,83 @@ ul, li {
 
 /* Notebooks e telas médias */
 @media (max-width: 1199px) {
-    .header{
-      height: 80px;
-      width: 100%;
-    }
+    .navbar{
+     height: 70px;
+     position: sticky;
+     top: 0;
+  }
+  .titulo-nav{
+     font-size: 28px;
+  }
+  .logo{
+     width: 50px;
+     height: 50px;
+  }
+  .links{
+    margin: 30px;
+    justify-content: space-between;
+}
+  ul, li {
+     font-size: 16px;
+     margin: 0;
+  }
+  .login, .signup {
+     width: 85px;
+     height: 40px;
+     font-size: 16px;
+  }
 }
   
 /* Tablets */
 @media (max-width: 991px) {
-  .header{
-    height: 100px;
+  .navbar{
+     height: 80px;
+     position: sticky;
+     top: 0;
+  }
+  .titulo-nav{
+     font-size: 25px;
+  }
+  .logo{
+     width: 48px;
+     height: 48px;
   }
   .links{
-    font-size: 23px;
+    margin: 30px;
+    justify-content: space-between;
+}
+  ul, li {
+     font-size: 15px;
+     margin: 0;
   }
-  .logo-wl {
-    height: 80px;
-    width: 120px;
+  .login, .signup {
+     width: 85px;
+     height: 40px;
+     font-size: 16px;
   }
 }
 
 /* Celulares grandes */
 @media (max-width: 767px) {
-  .header{
-    height: 120px;
+  .navbar{
+     height: 80px;
+     position: sticky;
+     top: 0;
   }
-  .links{
-    font-size: 25px;
+  .titulo-nav{
+     font-size: 25px;
   }
-  .logo-wl {
-    height: 90px;
-    width: 130px;
+  .logo{
+     width: 48px;
+     height: 48px;
+  }
+  ul, li {
+     display: none;
+  }
+  .login, .signup {
+     width: 85px;
+     height: 40px;
+     font-size: 16px;
   }
 }
 
