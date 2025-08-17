@@ -77,3 +77,12 @@ npm i
 ```bash
 npm run dev
 ```
+- **Pronto, agora você terá acesso ao projeto. 😉**
+
+## 📜 Licença
+
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👤 Autor
+
+- **Walmir Lima** – [@Walmir07](https://github.com/Walmir07)
